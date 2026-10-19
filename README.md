@@ -4,6 +4,8 @@
 
 AI for Science 是一个开源的 AI 研发工作台，面向药物发现与工艺开发两条主线。当前版本重点解决工艺设计中最耗时的环节：把文字、图片、表格里的工艺信息，转成可编辑的流程图，再生成符合工程制图习惯的 **图例图** 与 **工段图**，并导出 SVG / DXF。
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/11111166/ai-for-science?quickstart=1)
+
 - 在线体验：<https://business-cloud.tail54f227.ts.net:8443/apps/ai4science/>
 - 制图规范：[`docs/PFD_CAD.md`](docs/PFD_CAD.md)
 - 系统架构：[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
