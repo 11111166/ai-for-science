@@ -6,7 +6,7 @@ AI for Science 是一个开源的 AI 研发工作台，面向药物发现与工�
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/11111166/ai-for-science?quickstart=1)
 
-- 在线体验：<https://business-cloud.tail54f227.ts.net:8443/apps/ai4science/>
+- 在线体验：<https://business-cloud.tail54f227.ts.net/apps/ai4science/>
 - 制图规范：[`docs/PFD_CAD.md`](docs/PFD_CAD.md)
 - 系统架构：[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - 快速演示：[`docs/DEMO.md`](docs/DEMO.md)

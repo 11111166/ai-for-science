@@ -2,7 +2,7 @@
 
 ## 在线体验
 
-打开 <https://business-cloud.tail54f227.ts.net:8443/apps/ai4science/>，注册账号后进入工作台。
+打开 <https://business-cloud.tail54f227.ts.net/apps/ai4science/>，注册账号后进入工作台。
 
 > 演示站用于功能体验。请勿上传患者信息、员工信息、客户资料或未公开的商业数据。
 
