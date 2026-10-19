@@ -4,14 +4,22 @@
 
 AI for Science 是一个开源的 AI 研发工作台，面向药物发现与工艺开发两条主线。当前版本重点解决工艺设计中最耗时的环节：把文字、图片、表格里的工艺信息，转成可编辑的流程图，再生成符合工程制图习惯的 **图例图** 与 **工段图**，并导出 SVG / DXF。
 
+[![在线体验](https://img.shields.io/badge/%F0%9F%9A%80%20%E5%9C%A8%E7%BA%BF%E4%BD%93%E9%AA%8C-%E7%AB%8B%E5%8D%B3%E6%89%93%E5%BC%80-2ea44f?style=for-the-badge)](https://business-cloud.tail54f227.ts.net/apps/ai4science/)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/11111166/ai-for-science?quickstart=1)
 
-- 在线体验：<https://business-cloud.tail54f227.ts.net/apps/ai4science/>
+## 立即体验
+
+**公网演示站：<https://business-cloud.tail54f227.ts.net/apps/ai4science/>**
+
+打开链接后选择 **“注册账号”**，填写账号、姓名和密码即可进入工作台，体验工艺信息识别、PFD 编辑、图例图/工段图切换以及 SVG / DXF 导出。无需安装，任何能访问互联网的设备都可以使用。
+
+> 演示站用于功能体验。请勿上传患者信息、员工信息、客户资料或未公开的商业数据。
+
+## 文档导航
+
 - 制图规范：[`docs/PFD_CAD.md`](docs/PFD_CAD.md)
 - 系统架构：[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - 快速演示：[`docs/DEMO.md`](docs/DEMO.md)
-
-> 在线站点由维护者提供，注册后即可体验。请勿上传患者信息、员工信息、客户资料或未公开的商业数据。
 
 ## 核心能力
 
