@@ -14,7 +14,10 @@ tsconfig.tsbuildinfo
 !.env.example
 .secrets/
 
-data/
+/data/
+services/api/data/*
+!services/api/data/omics_examples/
+!services/api/data/omics_examples/**
 uploads/
 *.db
 *.db-journal

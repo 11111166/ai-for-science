@@ -1,0 +1,56 @@
+{
+  "version": "public-route-catalog-v1",
+  "updated_at": "2026-09-14",
+  "records": [
+    {
+      "name": "阿司匹林",
+      "english_name": "Aspirin",
+      "aliases": ["aspirin", "acetylsalicylic acid", "阿司匹林", "50-78-2", "2244"],
+      "cas": "50-78-2",
+      "pubchem_cid": 2244,
+      "formula": "C9H8O4",
+      "molecular_weight": 180.16,
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "routes": [
+        {"name": "水杨酸乙酰化路线", "steps": 1, "starting_materials": ["水杨酸", "乙酸酐"], "transformations": ["酚羟基乙酰化"], "purification": ["结晶", "重结晶"], "chromatography": false, "scale_evidence": "成熟工业化学转化", "route_evidence": "中", "hazards": ["乙酸酐腐蚀性", "放热与酸性介质"]}
+      ],
+      "sources": [
+        {"label": "PubChem CID 2244：身份、性质与汇总参考资料", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244", "scope": "identity"}
+      ]
+    },
+    {
+      "name": "对乙酰氨基酚",
+      "english_name": "Paracetamol",
+      "aliases": ["paracetamol", "acetaminophen", "对乙酰氨基酚", "扑热息痛", "103-90-2", "1983"],
+      "cas": "103-90-2",
+      "pubchem_cid": 1983,
+      "formula": "C8H9NO2",
+      "molecular_weight": 151.16,
+      "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+      "routes": [
+        {"name": "对氨基酚乙酰化路线", "steps": 1, "starting_materials": ["对氨基酚", "乙酸酐"], "transformations": ["胺基选择性乙酰化"], "purification": ["结晶", "过滤", "干燥"], "chromatography": false, "scale_evidence": "成熟工业化学转化", "route_evidence": "中", "hazards": ["对氨基酚暴露", "乙酸酐腐蚀性"]}
+      ],
+      "sources": [
+        {"label": "PubChem CID 1983：身份、性质与汇总参考资料", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1983", "scope": "identity"}
+      ]
+    },
+    {
+      "name": "布洛芬",
+      "english_name": "Ibuprofen",
+      "aliases": ["ibuprofen", "布洛芬", "15687-27-1", "3672"],
+      "cas": "15687-27-1",
+      "pubchem_cid": 3672,
+      "formula": "C13H18O2",
+      "molecular_weight": 206.28,
+      "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "routes": [
+        {"name": "BHC 催化三步路线", "steps": 3, "starting_materials": ["异丁基苯"], "transformations": ["Friedel–Crafts 酰化", "催化加氢", "羰基化"], "purification": ["相分离", "结晶"], "chromatography": false, "scale_evidence": "工业实施公开案例", "route_evidence": "高", "hazards": ["一氧化碳压力操作", "强酸催化体系"]},
+        {"name": "传统多步路线", "steps": 6, "starting_materials": ["异丁基苯"], "transformations": ["多步官能团转化"], "purification": ["萃取", "蒸馏", "结晶"], "chromatography": false, "scale_evidence": "历史工业路线", "route_evidence": "中", "hazards": ["步骤多、废物流较多"]}
+      ],
+      "sources": [
+        {"label": "PubChem CID 3672：化合物身份与性质", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3672", "scope": "identity"},
+        {"label": "US EPA：BHC Company Ibuprofen Process", "url": "https://www.epa.gov/sites/default/files/documents/award_recipients_1996_2012.pdf", "scope": "route"}
+      ]
+    }
+  ]
+}

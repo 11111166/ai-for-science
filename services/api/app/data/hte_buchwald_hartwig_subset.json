@@ -1,0 +1,56 @@
+{
+  "id": "buchwald-hartwig-48",
+  "name": "Buchwald–Hartwig 公开反应筛选数据",
+  "description": "固定一种反应底物，实际测试 48 组配体、添加剂和碱的组合，并记录每组收率。",
+  "reaction": "Buchwald–Hartwig C–N 偶联",
+  "target": {
+    "name": "固定底物的 C–N 偶联产物",
+    "identity": "公开子集未提供可独立核对的完整产物身份",
+    "state": "公开数据未报告目标物态",
+    "amount": "条件筛选数据，不对应指定交付量"
+  },
+  "source": {
+    "dataset_url": "https://github.com/rxn4chemistry/rxn_yields/blob/master/data/Buchwald-Hartwig/Dreher_and_Doyle_input_data.xlsx",
+    "paper_url": "https://doi.org/10.1126/science.aar5169",
+    "citation": "Ahneman et al., Science 2018; FullCV/Plates public benchmark",
+    "snapshot": "FullCV source values, 48-row fixed-substrate subset"
+  },
+  "fixed": {"芳基卤化物": "ClC1=NC=CC=C1"},
+  "legends": {
+    "配体": {
+      "L1": "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P(C3CCCCC3)C4CCCCC4)C=CC=C2",
+      "L2": "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P(C(C)(C)C)C(C)(C)C)C=CC=C2",
+      "L3": "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P(C(C)(C)C)C(C)(C)C)C(OC)=CC=C2OC",
+      "L4": "CC(C)C(C=C(C(C)C)C=C1C(C)C)=C1C2=C(P([C@@]3(C[C@@H]4C5)C[C@H](C4)C[C@H]5C3)[C@]6(C7)C[C@@H](C[C@@H]7C8)C[C@@H]8C6)C(OC)=CC=C2OC"
+    },
+    "添加剂": {
+      "A1": "CC1=NOC(C(OCC)=O)=C1",
+      "A2": "CC1=CC(C(OCC)=O)=NO1",
+      "A3": "C1(C2=CC=CC=C2)=CON=C1",
+      "A4": "C1(C2=CC=CC=C2)=NOC=C1"
+    },
+    "碱": {
+      "B1": "CN(C)P(N(C)C)(N(C)C)=NP(N(C)C)(N(C)C)=NCC",
+      "B2": "CC(C)(C)/N=C(N(C)C)/N(C)C",
+      "B3": "CN1CCCN2C1=NCCC2"
+    }
+  },
+  "rows": [
+    ["L1","A1","B1",35.1395],["L1","A1","B2",30.4254],["L1","A1","B3",33.8754],
+    ["L1","A2","B1",22.6117],["L1","A2","B2",31.6173],["L1","A2","B3",38.1430],
+    ["L1","A3","B1",12.9858],["L1","A3","B2",16.8293],["L1","A3","B3",15.6980],
+    ["L1","A4","B1",10.5957],["L1","A4","B2",32.9278],["L1","A4","B3",32.3691],
+    ["L2","A1","B1",65.9399],["L2","A1","B2",70.2056],["L2","A1","B3",91.3906],
+    ["L2","A2","B1",56.8328],["L2","A2","B2",73.6432],["L2","A2","B3",84.8561],
+    ["L2","A3","B1",31.2991],["L2","A3","B2",69.3950],["L2","A3","B3",88.4464],
+    ["L2","A4","B1",52.8544],["L2","A4","B2",80.5886],["L2","A4","B3",86.1944],
+    ["L3","A1","B1",76.8342],["L3","A1","B2",54.5847],["L3","A1","B3",77.8708],
+    ["L3","A2","B1",63.8547],["L3","A2","B2",70.2831],["L3","A2","B3",84.6902],
+    ["L3","A3","B1",23.7006],["L3","A3","B2",32.1906],["L3","A3","B3",50.8087],
+    ["L3","A4","B1",68.9909],["L3","A4","B2",78.1728],["L3","A4","B3",86.1219],
+    ["L4","A1","B1",55.0898],["L4","A1","B2",34.6849],["L4","A1","B3",67.6714],
+    ["L4","A2","B1",64.0289],["L4","A2","B2",45.3074],["L4","A2","B3",86.2002],
+    ["L4","A3","B1",19.2758],["L4","A3","B2",17.3168],["L4","A3","B3",44.4790],
+    ["L4","A4","B1",74.6116],["L4","A4","B2",61.9187],["L4","A4","B3",89.8895]
+  ]
+}

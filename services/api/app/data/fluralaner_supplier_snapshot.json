@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "records": {
+    "step_1": {
+      "cas": "369-32-4",
+      "source_url": "https://www.chemicalbook.com/ChemicalProductProperty_EN_CB1734502.htm",
+      "listed_suppliers": 202,
+      "source_sha256": "b73d0ed4a25520730843cf87b82a45b09db00f1e8e72aa4dbdef648dbad78206",
+      "checked_at": "2026-09-17T03:08:20.372257+00:00",
+      "basis": "ChemicalBook 单页标示的供应商挂牌总数（未核验生产厂家，可能混合贸易商、试剂商、重复/过期条目）"
+    },
+    "step_2": {
+      "cas": "1138444-80-0",
+      "source_url": "https://www.chemicalbook.com/ProdSupplierGNCB72479625_EN.htm",
+      "listed_suppliers": 56,
+      "source_sha256": "597a4c8d5190ca5793438a05fda92ac0f3e737714ddbe53b803c8555d618e63a",
+      "checked_at": "2026-09-17T03:08:20.372257+00:00",
+      "basis": "ChemicalBook 单页标示的供应商挂牌总数（未核验生产厂家，可能混合贸易商、试剂商、重复/过期条目）"
+    },
+    "step_3": {
+      "cas": "55860-35-0",
+      "source_url": "https://www.chemicalbook.com/ChemicalProductProperty_EN_CB43385195.htm",
+      "listed_suppliers": 302,
+      "source_sha256": "e3c981a7793d37cf71280ef518aad053c195a46a67e29cf98d0cd601bc7ee32d",
+      "checked_at": "2026-09-17T03:08:20.372257+00:00",
+      "basis": "ChemicalBook 单页标示的供应商挂牌总数（未核验生产厂家，可能混合贸易商、试剂商、重复/过期条目）"
+    },
+    "step_6": {
+      "cas": "864731-37-3",
+      "source_url": "https://m.chemicalbook.com/ProdSupplierGNCB54662829.htm",
+      "listed_suppliers": 35,
+      "source_sha256": "d315fe2bd5a94c070b6b1d8646d121bf4fc58403a5251b43748811aa715806eb",
+      "checked_at": "2026-09-17T03:08:20.372257+00:00",
+      "basis": "ChemicalBook 单页标示的供应商挂牌总数（未核验生产厂家，可能混合贸易商、试剂商、重复/过期条目）"
+    },
+    "branch_reagent": {
+      "cas": "130336-16-2",
+      "source_url": "https://www.chemicalbook.com/Manufacturers/3-5-dichloro-2-2-2-trifluoroacetophenone.htm",
+      "listed_suppliers": 284,
+      "source_sha256": "6f66fb1e203c8cbb586e90063b513ed9bb8cebdc1ef9fe2bcc36a3eea99384dd",
+      "checked_at": "2026-09-17T03:08:20.372257+00:00",
+      "basis": "ChemicalBook 单页标示的供应商挂牌总数（未核验生产厂家，可能混合贸易商、试剂商、重复/过期条目）"
+    }
+  }
+}

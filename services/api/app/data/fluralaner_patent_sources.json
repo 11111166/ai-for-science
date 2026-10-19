@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "WO2023012821A1": {
+      "url": "https://patents.google.com/patent/WO2023012821A1/en",
+      "source_kind": "Google Patents 公开文本镜像",
+      "retrieved_at": "2026-09-17T02:46:53.827225+00:00",
+      "source_sha256": "525f75fffee7c881214f11445e9edb4e38c95dbb1f012e8bb770760dcb628173",
+      "paragraphs": [
+        {
+          "locator": "p0214",
+          "text": "Example 1: Preparation of Fluralaner (Compound of Formula I-a)"
+        },
+        {
+          "locator": "p0215",
+          "text": "Step-1: l-(4-fhioro-3-methylphenyl)ethan-l-one To a solution of l-fluoro-2-methylbenzene (50 g, 454.0 mmol) in dichloromethane (250 ml) was added acetyl chloride (35.64 g, 454.0 mmol) at 25 °C followed by aluminum trichloride (AICI3) portion wise (72.64 g, 544.8 mmol) and stirred at 25 °Cfor 4 hours. After completion of the reaction, the reaction was quenched by pouring the reaction mass onto diluted HCl in ice water. The reaction mixture was extracted with dichloromethane (3x200 mL) and combined organic phase was washed with water (3 x 250 mL), dried over anhydrous sodium sulphate (Na2SO4). Dichloromethane was evaporated under reduced pressure to afford crude product 65 g, which was further purified by column chromatography to obtain l-(4-fluoro-3- methylphenyl)ethan-l-one (40 g, 57%)."
+        },
+        {
+          "locator": "p0218",
+          "text": "Step-2: 4-acetyl-2-methylbenzonitrile"
+        },
+        {
+          "locator": "p0219",
+          "text": "To a solution of l-(4-fluoro-3-methylphenyl)ethan-l-one (40 g, 262.87 mmol) in NMP (200 ml) was added sodium cyanide(15.45 g, 315.44 mmol) at 25 °C and stirred at 130°C for 15 hours. After completion of the reaction, the reaction mass was cooled to 25 °C, diluted by dichloromethane and washed with water. The dichloromethane was separated and dried over anhydrous sodium sulphate. Dichloromethane was evaporated under reduced pressure to afford crude compound (35 g) which was further purified by column chromatography to obtain the 4-acetyl-2-methylbenzonitrile (27 g, 64%)."
+        },
+        {
+          "locator": "p0222",
+          "text": "Step-3: 4-acetyl-2-methylbenzoic add"
+        },
+        {
+          "locator": "p0223",
+          "text": "To a solution of 4-acetyl-2-methylbenzonitrile (27 g, 169.6 mmol) in water (150 mL) was added sulphuric acid (10 G) and glacial acetic acid (100 mL) at 25 °C and stirred at 100 °C 12 hours. After completion of the reaction, the reaction mass was cooled to 25 °C, diluted by adding cold water, and basified (to pH 10.0) by sodium hydroxide (30%). The aqueous layer was washed with ethyl acetate followed by acidification by 6N hydrogen chloride, and by ethyl acetate. The ethyl acetate layer was separated and dried over anhydrous sodium sulphate (Na2SO4) to obtain 4-acetyl-2-methylbenzoic acid (23 g, 76%)."
+        },
+        {
+          "locator": "p0226",
+          "text": "Step-4: ethyl (4-acetyl-2-methylbenzoyl)glycinate"
+        },
+        {
+          "locator": "p0227",
+          "text": "To a solution of 4-acetyl-2-methylbenzoic acid (1.9 g, 10.66 mmol) in dichloromethane (10 mL) was added thionyl chloride (1.25 g, 10.66 mmol) at 25 °C and stirred at 40 °C for 5 hours. After completion of the reaction, the reaction mass was cooled to 25 °C and added to the solution of ethyl glycinate hydrochloride (1.64 g, 11.73 mmol) in dichloromethane (10 mL) and triethyl amine (3.5 mL, 42.65 mmol) at 0°C and stirred at 25 °C for 2 hours. After completion of the reaction, the reaction mass was diluted with dichloromethane (10 mL) and washed with water (2x15 mL). The dichloro methane layer was separated, dried over anhydrous sodium sulphate (Na2SO4) and concentrated under vacuum to obtain ethyl (4- acetyl-2-methylbenzoyl)glycinate (2.7 g, 96%)."
+        },
+        {
+          "locator": "p0230",
+          "text": "Step-5: ethyl (E)-(4-(3-(3,5-dichlorophenyl)-4,4,4-trifhiorobut-2-enoyl)-2- methylbenzoyl)glycinate"
+        },
+        {
+          "locator": "p0231",
+          "text": "To a solution of ethyl (4-acetyl-2-methylbenzoyl)glycinate (1.3 g, 4.94 mmol) in acetonitrile (20 mL) was added cesium carbonate (6.43 g, 19.75 mmol) at 25 °C followed by l-(3,5- dichlorophenyl)-2,2,2-trifluoroethan-l-one(1.44 g, 5.92 mmol) and refluxed. After completion of the reaction, the reaction mass was cooled to 25 °C, filtered to remove cesium carbonate and solvent was distilled out. Water (20 mL) was added to the reaction mixture and extracted with ethyl acetate (xl5 mL). The ethyl acetate layer was washed with water, dried over anhydrous sodium sulphate (Na2SO4) and distilled out under reduced pressure to obtain ethyl (E)-(4-(3-(3,5-dichlorophenyl)-4,4,4-trifluorobut-2-enoyl)-2-methylbenzoyl)glycinate (1.97 g, yield 82%)."
+        },
+        {
+          "locator": "p0234",
+          "text": "Step-6: ethyl (4-(5-(3,5-dichlorophenyl)-5-(trifluoromethyl)-4,5-dihydroisoxazol-3-yl)-2- methylbenzoyl)glycinate"
+        },
+        {
+          "locator": "p0235",
+          "text": "To a solution of ethyl (E)-(4-(3-(3,5-dichlorophenyl)-4,4,4-trifluorobut-2-enoyl)-2- methylbenzoyl)glycinate (1 g, 2.05 mmol) in acetonitrile (10 mL) was added DBU (623.5 mg, 4.10 mmol), hydroxylamine 50% in water (0.6 mL, 8.19 mmol), and tert-butyl ammonium bromide (50 mg) and lithium hydroxide (133.4 mg, dissolved in 1 mL water) and stirred at 25 °C for 2 hours. After completions of the reaction, ethanol was evaporated, diluted with water and acidified by cone. Hydrochloric acid to precipitate the product which was then filtered, washed with water and traces of water were evaporated under reduced pressure to obtain 4-(5-(3,5-dichlorophenyl)-5-(trifluoromethyl)-4,5-dihydroisoxazol-3-yl)-2- methylbenzoyl)glycine (850 mg, yield 87%)."
+        },
+        {
+          "locator": "p0238",
+          "text": "Step-7: 4-(5-(3,5-dichlorophenyl)-5-(trifhioromethyl)-4,5-dihydroisoxazol-3-yl)-2- methyl-N-(2-oxo-2-((2,2,2-trifluoroethyl)amino)ethyl)benzamide (Fluralaner- Compound of Formula I)"
+        },
+        {
+          "locator": "p0239",
+          "text": "To a solution of (4-(5-(3,5-dichlorophenyl)-5-(trifluoromethyl)-4,5-dihydroisoxazol-3-yl)-2- methylbenzoyl)glycine (800 mg, 1.68 mmol) in dichloromethane was added 2,2,2- trifluoroethan-1 -amine hydrochloride (249.3 mg, 1.84 mmol) followed by addition of triethylamine (42.59 mg, 4.2 mmol) and EDC.HCl. (362.6 mg, 1.84 mmol) at 25 °C. The reaction mass was stirred at 25 °C. After completion of the reaction, the reaction mass was diluted with water and extracted by dichloromethane. The separated dichloromethane layer was dried over anhydrous sodium sulphate (Na2SO4) and concentrated under reduced pressure to obtain 4-(5-(3,5-dichlorophenyl)-5-(trifluoromethyl)-4,5-dihydroisoxazol-3-yl)-2- methyl-N-(2-oxo-2-((2,2,2-trifluoroethyl)amino)ethyl)benzamide (Fluralaner- Compound of Formula I) 110 mg (769 mg, yield: 82 %)."
+        }
+      ]
+    },
+    "EP4077285A1": {
+      "url": "https://patents.google.com/patent/EP4077285A1/en",
+      "source_kind": "Google Patents 公开文本镜像",
+      "retrieved_at": "2026-09-17T02:46:59.012063+00:00",
+      "source_sha256": "5d60c4a579f95b0a2d304fd176132d85729d460124a83855776e9b9b7b6a24aa",
+      "paragraphs": [
+        {
+          "locator": "p0097",
+          "text": "[0071] The purity of Fluralaner in general may be determined with the following HPLC method: col umn: Acquity CSH C18, 100x2. lmm, 1.7 pm, precolumn; flow-rate: 0.2ml/min; column temperature: 25°C, wavelength: UV 260 nm; mobile phase: eluent A: 5mM K2HPO4, Eluent B: 98% acetonitrile; gradient:"
+        },
+        {
+          "locator": "p0098",
+          "text": "[0072] Sample preparation: Accurately weigh about 10 mg of sample and dissolve in 10 ml of metha nol. Calculation: Use area per cent method. Do not integrate solvent peaks."
+        },
+        {
+          "locator": "p0099",
+          "text": "[0073] The following examples illustrate the invention and are not intended to restrict the scope of the invention in any way. Example 1 - Synthesis of Fluralaner according to variant (i)"
+        },
+        {
+          "locator": "p0100",
+          "text": "[0074] At room temperature (20-25°C) 10.0 g (21 mmol) (4-(5-(3,5-dichlorophenyl)-5-(trifluorome- thyl)-4,5-dihydroisoxazol-3-yl)-2-methylbenzoyl)glycine were charged into 300 mL of dichloro- methane, 12.5 g (126,2 mmol) 2,2,2-trifluoroethan-l -amine and 4 g (32.7 mmol) DMAP (4-dimethyla- minopyridine) were added into the reactor vessel and agitated for at least 15 minutes to get white to yellowish suspension. Then 4.8 g (25 mmol) 1 -ethyl-3 -(3 -dimethylaminopropyl)carbodiimide hydro chloride (EDC HCl) were added and the mixture was agitated until reaction was finished according to HPLC analysis."
+        },
+        {
+          "locator": "p0101",
+          "text": "[0075] Then 300 mL of 5 % aqueous solution of hydrochloric acid were added, agitated for at least 15 minutes and the two phases were separated. Water phase was washed with 100 mL of dichloromethane and organic phase was separated. Both organic phases were combined and the solvent was evaporated to get white product (10.7 g) with HPLC purity above 95 area %. Reaction yield was 91.8 %."
+        },
+        {
+          "locator": "p0102",
+          "text": "[0076] The product from previous step was charged to the mixture of 19.3 mL of ethyl acetate and 64.2 mL of toluene. The mixture was agitated for some time and heated to 80°C to get yellow solution. If needed the solution was filtrated. The clear solution was cooled down to 0° - 5°C, agitated to precipitate the product which was filtered. The product was washed with the same mixture of ethyl acetate and toluene (3.9 mL : 12.8 mL) and sucked off well. The product was dried and after drying 8.8 g of white product with the HPLC purity above 99 area % was obtained. The residual content of compound (2) as determined by HPLC was less than 0.017 area%. The content of dimeric impurity as determined by HPLC was less than 0.14 area%."
+        },
+        {
+          "locator": "p0103",
+          "text": "[0077] Total yield for both steps was 75.5 %."
+        },
+        {
+          "locator": "p0104",
+          "text": "Example 2 - Synthesis of Fluralaner according to variant (ii)"
+        },
+        {
+          "locator": "p0105",
+          "text": "[0078] At room temperature (20-25°C) 10.0 g (21 mmol) (4-(5-(3,5-dichlorophenyl)-5-(trifluorome- thyl)-4,5-dihydroisoxazol-3-yl)-2-methylbenzoyl)glycine were charged into 300 mL of dichloro methane, 2.7 g (23.4 mmol) NHS (hydroxysuccinimide, l-hydroxypyrrolidine-2,5-dione) and 4.8 g (25 mmol) 1 -ethyl-3 -(3 -dimethylaminopropyl)carbodiimide hydrochloride (EDC HCl) were added and ag itated. After some time (approximately 75 min) to the mixture 12.5 g (126.2 mmol) 2,2,2-trifluoroethan- 1 -amine were added and the mixture was agitated until reaction was finished according to HPLC anal ysis. [0079] Then 300 mL of water were added to the mixture, agitated for at least 15 minutes and then was left to separate the phases. The organic phase was separated and the water phase was washed with 100 mL of dichloromethane. Both organic phases were combined and the solvent was evaporated o get dry yellowish product ( 11.1 g) in HPLC purity above 93 area %. Reaction yield was 95.2 %."
+        },
+        {
+          "locator": "p0106",
+          "text": "[0080] The product from previous step was charged to the mixture of 20 mL of ethyl acetate and 66.6 mL of toluene. The mixture was agitated for some time and heated to 80°C to get yellow solution. If needed the solution was filtrated. The clear solution was cooled down to 0°- 5°C and agitated to precip itate the product which was then filtered and washed using the same mixture of ethyl acetate and toluene (3.9 mL : 12.8 mL) and sucked off well. The product was dried and 8.6 g of white product with the HPLC purity above 98 area % were obtained."
+        },
+        {
+          "locator": "p0107",
+          "text": "[0081] The residual content of compound (2) as determined by HPLC was less than 0.14 area%. The content of dimeric impurity as determined by HPLC was less than 0.13 area%."
+        },
+        {
+          "locator": "p0108",
+          "text": "[0082] Total yield for both steps was 73.9 %."
+        }
+      ]
+    }
+  }
+}

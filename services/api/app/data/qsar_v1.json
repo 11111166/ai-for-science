@@ -1,0 +1,4520 @@
+{
+  "version": "target-qsar-pic50-v1",
+  "created_at": "2026-09-08T07:01:03.250414+00:00",
+  "method": "Morgan radius 2 / 2048 bits + RandomForest 160 trees; scaffold holdout 20%; training scaffold CV 4 folds",
+  "seed": 20260908,
+  "rdkit_version": "2025.09.6",
+  "sklearn_version": "1.7.2",
+  "models": [
+    {
+      "symbol": "ACE",
+      "target_id": "CHEMBL1808",
+      "endpoint": "pIC50",
+      "status": "validated",
+      "reason": "",
+      "raw_count": 571,
+      "source_total": 571,
+      "structure_count": 435,
+      "scaffold_count": 208,
+      "invalid_count": 0,
+      "discordant_structure_count": 15,
+      "retrieved_at": "2026-09-08T06:59:09.055213+00:00",
+      "data_sha256": "1f72577d8c0888b144e577b07c8363e1e1f9409c12ec7b14a464f8aef72479c3",
+      "predictions": [
+        {
+          "identifier": "CHEMBL289556",
+          "name": "OMAPATRILAT",
+          "input_smiles": "O=C(N[C@H]1CCS[C@H]2CCC[C@@H](C(=O)O)N2C1=O)[C@@H](S)Cc1ccccc1",
+          "predicted": 7.677271942727406,
+          "observed": 9.5,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.7931034482758621,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL1788109",
+          "name": "CHEMBL1788109",
+          "input_smiles": "CC(=O)S[C@H](C)C(=O)N1[C@H](C(=O)O)C[C@H](C(=O)O)[C@@H]1c1ccccc1",
+          "predicted": 7.170065578778863,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.45161290322580644,
+          "domain": "outside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL198316",
+          "name": "CHEMBL198316",
+          "input_smiles": "O=C(N[C@H]1Cc2ccccc2C2CCC[C@H](C(=O)O)N2C1=O)[C@H](S)Cc1ccccc1",
+          "predicted": 7.590307384195661,
+          "observed": 9.96,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.6949152542372882,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL443353",
+          "name": "CHEMBL443353",
+          "input_smiles": "C[C@H](CS)C(=O)N1[C@@H](SCCCc2ccccc2)CC[C@H]1C(=O)O",
+          "predicted": 8.51664909231394,
+          "observed": 10.54,
+          "prediction_kind": "scaffold_holdout",
+          "similarity": 0.8958333333333334,
+          "domain": "inside",
+          "status": "available"
+        }
+      ],
+      "train_count": 357,
+      "test_count": 78,
+      "metrics": {
+        "mae": 0.5933687240681976,
+        "rmse": 0.7931706117242452,
+        "r2": 0.6091862597222519,
+        "baseline_rmse": 1.2936353070677638
+      },
+      "quality_gate": {
+        "passed": true,
+        "max_rmse": 1.2,
+        "baseline_ratio": 0.9,
+        "min_r2": 0
+      },
+      "test_points": [
+        {
+          "id": "CHEMBL172917",
+          "observed": 6.48,
+          "predicted": 7.558213504204124
+        },
+        {
+          "id": "CHEMBL91777",
+          "observed": 5.785,
+          "predicted": 5.608685148358587
+        },
+        {
+          "id": "CHEMBL176960",
+          "observed": 5.89,
+          "predicted": 6.05262850378788
+        },
+        {
+          "id": "CHEMBL92949",
+          "observed": 6.62,
+          "predicted": 6.873932692567853
+        },
+        {
+          "id": "CHEMBL93167",
+          "observed": 6.91,
+          "predicted": 7.024121866154681
+        },
+        {
+          "id": "CHEMBL41289",
+          "observed": 8.3,
+          "predicted": 6.548811400119492
+        },
+        {
+          "id": "CHEMBL171850",
+          "observed": 6.15,
+          "predicted": 5.674112370962372
+        },
+        {
+          "id": "CHEMBL367174",
+          "observed": 5.55,
+          "predicted": 5.754805285599818
+        },
+        {
+          "id": "CHEMBL255568",
+          "observed": 6.99,
+          "predicted": 6.86897920690421
+        },
+        {
+          "id": "CHEMBL499611",
+          "observed": 7.82,
+          "predicted": 7.910985248171967
+        },
+        {
+          "id": "CHEMBL443353",
+          "observed": 10.54,
+          "predicted": 8.51664909231394
+        },
+        {
+          "id": "CHEMBL5272875",
+          "observed": 6.08,
+          "predicted": 5.759190709203989
+        },
+        {
+          "id": "CHEMBL445830",
+          "observed": 6.43,
+          "predicted": 7.107603791607692
+        },
+        {
+          "id": "CHEMBL456045",
+          "observed": 5.52,
+          "predicted": 6.719395066785499
+        },
+        {
+          "id": "CHEMBL512941",
+          "observed": 5.4,
+          "predicted": 6.821757349311953
+        },
+        {
+          "id": "CHEMBL331378",
+          "observed": 9.4,
+          "predicted": 6.711694243950491
+        },
+        {
+          "id": "CHEMBL91792",
+          "observed": 5.0,
+          "predicted": 5.655907606195889
+        },
+        {
+          "id": "CHEMBL264538",
+          "observed": 6.14,
+          "predicted": 6.661911596996754
+        },
+        {
+          "id": "CHEMBL54601",
+          "observed": 5.4,
+          "predicted": 5.959604122389855
+        },
+        {
+          "id": "CHEMBL293794",
+          "observed": 5.42,
+          "predicted": 5.789961188290878
+        },
+        {
+          "id": "CHEMBL6192024",
+          "observed": 5.7,
+          "predicted": 5.836821082476552
+        },
+        {
+          "id": "CHEMBL172913",
+          "observed": 6.52,
+          "predicted": 7.257320560342434
+        },
+        {
+          "id": "CHEMBL263460",
+          "observed": 8.54,
+          "predicted": 8.00382001895674
+        },
+        {
+          "id": "CHEMBL4067185",
+          "observed": 6.8,
+          "predicted": 6.608550576073226
+        },
+        {
+          "id": "CHEMBL329801",
+          "observed": 7.37,
+          "predicted": 7.4005003968254
+        },
+        {
+          "id": "CHEMBL62955",
+          "observed": 7.6,
+          "predicted": 7.838539190843882
+        },
+        {
+          "id": "CHEMBL1907762",
+          "observed": 6.24,
+          "predicted": 6.790322493652181
+        },
+        {
+          "id": "CHEMBL114658",
+          "observed": 7.92,
+          "predicted": 7.61263972962801
+        },
+        {
+          "id": "CHEMBL105790",
+          "observed": 5.5,
+          "predicted": 6.725443363233988
+        },
+        {
+          "id": "CHEMBL110439",
+          "observed": 8.0,
+          "predicted": 6.76902174915647
+        },
+        {
+          "id": "CHEMBL55613",
+          "observed": 5.55,
+          "predicted": 6.449853886564826
+        },
+        {
+          "id": "CHEMBL56923",
+          "observed": 5.7,
+          "predicted": 5.67492446112915
+        },
+        {
+          "id": "CHEMBL172978",
+          "observed": 6.52,
+          "predicted": 5.958097158693024
+        },
+        {
+          "id": "CHEMBL1233799",
+          "observed": 7.46,
+          "predicted": 6.507016973044317
+        },
+        {
+          "id": "CHEMBL3264010",
+          "observed": 7.605,
+          "predicted": 6.5727277989371755
+        },
+        {
+          "id": "CHEMBL55520",
+          "observed": 5.23,
+          "predicted": 5.829929453012267
+        },
+        {
+          "id": "CHEMBL54796",
+          "observed": 5.46,
+          "predicted": 5.668339856150796
+        },
+        {
+          "id": "CHEMBL55103",
+          "observed": 5.64,
+          "predicted": 5.8517591732919865
+        },
+        {
+          "id": "CHEMBL4086264",
+          "observed": 8.07,
+          "predicted": 6.353234813537153
+        },
+        {
+          "id": "CHEMBL4078112",
+          "observed": 7.29,
+          "predicted": 6.354297313537153
+        },
+        {
+          "id": "CHEMBL174066",
+          "observed": 5.21,
+          "predicted": 5.855449042486313
+        },
+        {
+          "id": "CHEMBL4090635",
+          "observed": 6.55,
+          "predicted": 6.4448568222576
+        },
+        {
+          "id": "CHEMBL284898",
+          "observed": 7.62,
+          "predicted": 6.8442449293761785
+        },
+        {
+          "id": "CHEMBL25996",
+          "observed": 5.54,
+          "predicted": 6.40484138309607
+        },
+        {
+          "id": "CHEMBL6163328",
+          "observed": 4.44,
+          "predicted": 4.850633491161618
+        },
+        {
+          "id": "CHEMBL6152722",
+          "observed": 4.48,
+          "predicted": 4.890684123602092
+        },
+        {
+          "id": "CHEMBL3264008",
+          "observed": 7.275,
+          "predicted": 6.387195431911837
+        },
+        {
+          "id": "CHEMBL3264007",
+          "observed": 6.445,
+          "predicted": 6.4704350161990805
+        },
+        {
+          "id": "CHEMBL310200",
+          "observed": 6.54,
+          "predicted": 6.190809266622374
+        },
+        {
+          "id": "CHEMBL4166152",
+          "observed": 7.62,
+          "predicted": 7.70225478202353
+        },
+        {
+          "id": "CHEMBL315037",
+          "observed": 8.36,
+          "predicted": 6.646612905844154
+        },
+        {
+          "id": "CHEMBL80055",
+          "observed": 6.34,
+          "predicted": 6.120047960720176
+        },
+        {
+          "id": "CHEMBL1422",
+          "observed": 4.96,
+          "predicted": 5.302773846726192
+        },
+        {
+          "id": "CHEMBL556775",
+          "observed": 4.6,
+          "predicted": 5.426363034361474
+        },
+        {
+          "id": "CHEMBL91160",
+          "observed": 4.8,
+          "predicted": 5.638375569309163
+        },
+        {
+          "id": "CHEMBL299759",
+          "observed": 4.52,
+          "predicted": 6.285449874759744
+        },
+        {
+          "id": "CHEMBL212710",
+          "observed": 6.305,
+          "predicted": 7.207038090158197
+        },
+        {
+          "id": "CHEMBL551622",
+          "observed": 6.4,
+          "predicted": 6.3040076564673075
+        },
+        {
+          "id": "CHEMBL560409",
+          "observed": 6.55,
+          "predicted": 6.091904985119049
+        },
+        {
+          "id": "CHEMBL2153745",
+          "observed": 7.92,
+          "predicted": 7.111267653440306
+        },
+        {
+          "id": "CHEMBL305108",
+          "observed": 7.7,
+          "predicted": 8.013770573783857
+        },
+        {
+          "id": "CHEMBL65545",
+          "observed": 8.1,
+          "predicted": 8.049944235625484
+        },
+        {
+          "id": "CHEMBL329823",
+          "observed": 7.875,
+          "predicted": 6.7714968535804445
+        },
+        {
+          "id": "CHEMBL110444",
+          "observed": 7.625,
+          "predicted": 6.817358116883118
+        },
+        {
+          "id": "CHEMBL23467",
+          "observed": 6.21,
+          "predicted": 6.569063830266958
+        },
+        {
+          "id": "CHEMBL54477",
+          "observed": 5.46,
+          "predicted": 5.335444979933259
+        },
+        {
+          "id": "CHEMBL50814",
+          "observed": 7.6,
+          "predicted": 7.518957664557665
+        },
+        {
+          "id": "CHEMBL42683",
+          "observed": 8.0,
+          "predicted": 7.92691588480964
+        },
+        {
+          "id": "CHEMBL38613",
+          "observed": 8.4,
+          "predicted": 7.950512470775754
+        },
+        {
+          "id": "CHEMBL290802",
+          "observed": 8.07,
+          "predicted": 7.924571737984243
+        },
+        {
+          "id": "CHEMBL314706",
+          "observed": 6.07,
+          "predicted": 6.265071622164383
+        },
+        {
+          "id": "CHEMBL299169",
+          "observed": 7.66,
+          "predicted": 7.472001428345962
+        },
+        {
+          "id": "CHEMBL85175",
+          "observed": 6.9399999999999995,
+          "predicted": 6.259165372164384
+        },
+        {
+          "id": "CHEMBL4163792",
+          "observed": 8.05,
+          "predicted": 7.8872774498071365
+        },
+        {
+          "id": "CHEMBL147755",
+          "observed": 6.234999999999999,
+          "predicted": 5.662427418154762
+        },
+        {
+          "id": "CHEMBL367315",
+          "observed": 4.87,
+          "predicted": 5.430495806277058
+        },
+        {
+          "id": "CHEMBL6161258",
+          "observed": 4.41,
+          "predicted": 4.946796746482685
+        },
+        {
+          "id": "CHEMBL6152231",
+          "observed": 4.76,
+          "predicted": 4.606919645111835
+        }
+      ],
+      "train_scaffolds": 166,
+      "test_scaffolds": 42
+    },
+    {
+      "symbol": "EGFR",
+      "target_id": "CHEMBL203",
+      "endpoint": "pIC50",
+      "status": "validated",
+      "reason": "",
+      "raw_count": 2000,
+      "source_total": 16101,
+      "structure_count": 1605,
+      "scaffold_count": 531,
+      "invalid_count": 0,
+      "discordant_structure_count": 43,
+      "retrieved_at": "2026-09-08T06:59:24.395455+00:00",
+      "data_sha256": "575fd8b921f15a8ae0a3023d551d7aaf0a211aca50a03f8ee2879843417663df",
+      "predictions": [
+        {
+          "identifier": "CHEMBL5270693",
+          "name": "CHEMBL5270693",
+          "input_smiles": "COc1cc(N2CCC(N(C)C)CC2)ccc1Nc1ncc(C(=O)Oc2ccccc2)c(-c2c[nH]c3ccccc23)n1",
+          "predicted": 5.790409057088745,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.2828282828282828,
+          "domain": "outside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL5746224",
+          "name": "CHEMBL5746224",
+          "input_smiles": "CN1CCC2(CC1)CN(c1ccc3ncnc(Nc4cccc(Cl)c4F)c3c1)C(=O)O2",
+          "predicted": 7.670665589878874,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.5063291139240507,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL5790648",
+          "name": "CHEMBL5790648",
+          "input_smiles": "COc1cc2ncnc(Nc3cccc(Cl)c3F)c2cc1N1CC2(CN(C)C2)OC1=O",
+          "predicted": 7.760207835046899,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.5714285714285714,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL176582",
+          "name": "CHEMBL176582",
+          "input_smiles": "Cn1cnc2cc3ncnc(Nc4cccc(Br)c4)c3cc21",
+          "predicted": 8.091676434286201,
+          "observed": 11.0,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.9111111111111111,
+          "domain": "inside",
+          "status": "available"
+        }
+      ],
+      "train_count": 1329,
+      "test_count": 276,
+      "metrics": {
+        "mae": 0.5972358463288594,
+        "rmse": 0.7839379417558764,
+        "r2": 0.5802139327811082,
+        "baseline_rmse": 1.2810886519121036
+      },
+      "quality_gate": {
+        "passed": true,
+        "max_rmse": 1.2,
+        "baseline_ratio": 0.9,
+        "min_r2": 0
+      },
+      "test_points": [
+        {
+          "id": "CHEMBL382862",
+          "observed": 5.0,
+          "predicted": 6.321670792315324
+        },
+        {
+          "id": "CHEMBL423224",
+          "observed": 6.855,
+          "predicted": 6.324765385482572
+        },
+        {
+          "id": "CHEMBL383614",
+          "observed": 5.57,
+          "predicted": 6.831014982933736
+        },
+        {
+          "id": "CHEMBL203219",
+          "observed": 5.279999999999999,
+          "predicted": 6.537369678325147
+        },
+        {
+          "id": "CHEMBL153409",
+          "observed": 6.13,
+          "predicted": 7.537437359081895
+        },
+        {
+          "id": "CHEMBL126791",
+          "observed": 9.29,
+          "predicted": 8.744910592591811
+        },
+        {
+          "id": "CHEMBL128987",
+          "observed": 7.965,
+          "predicted": 8.640963233267104
+        },
+        {
+          "id": "CHEMBL40130",
+          "observed": 8.115,
+          "predicted": 7.965404186438559
+        },
+        {
+          "id": "CHEMBL366580",
+          "observed": 9.47,
+          "predicted": 8.524680558590713
+        },
+        {
+          "id": "CHEMBL424093",
+          "observed": 7.6,
+          "predicted": 7.54141755267302
+        },
+        {
+          "id": "CHEMBL138125",
+          "observed": 6.62,
+          "predicted": 7.568566349796036
+        },
+        {
+          "id": "CHEMBL162223",
+          "observed": 8.92,
+          "predicted": 8.750097352040324
+        },
+        {
+          "id": "CHEMBL271328",
+          "observed": 8.63,
+          "predicted": 8.104488725474894
+        },
+        {
+          "id": "CHEMBL54475",
+          "observed": 6.16,
+          "predicted": 7.007586239011195
+        },
+        {
+          "id": "CHEMBL355982",
+          "observed": 7.46,
+          "predicted": 7.166059688315158
+        },
+        {
+          "id": "CHEMBL205870",
+          "observed": 7.07,
+          "predicted": 7.377964474067602
+        },
+        {
+          "id": "CHEMBL544074",
+          "observed": 5.96,
+          "predicted": 5.978629834054837
+        },
+        {
+          "id": "CHEMBL204164",
+          "observed": 5.18,
+          "predicted": 7.013191712020618
+        },
+        {
+          "id": "CHEMBL381541",
+          "observed": 5.255,
+          "predicted": 6.961984878923161
+        },
+        {
+          "id": "CHEMBL430571",
+          "observed": 8.41,
+          "predicted": 7.839110878878067
+        },
+        {
+          "id": "CHEMBL540701",
+          "observed": 7.1,
+          "predicted": 7.322482789953102
+        },
+        {
+          "id": "CHEMBL258270",
+          "observed": 8.52,
+          "predicted": 7.939966662851042
+        },
+        {
+          "id": "CHEMBL207247",
+          "observed": 7.22,
+          "predicted": 7.16217548623252
+        },
+        {
+          "id": "CHEMBL53404",
+          "observed": 7.0,
+          "predicted": 7.135436443677854
+        },
+        {
+          "id": "CHEMBL438075",
+          "observed": 4.6,
+          "predicted": 7.137298332223334
+        },
+        {
+          "id": "CHEMBL205798",
+          "observed": 7.92,
+          "predicted": 7.225977883227886
+        },
+        {
+          "id": "CHEMBL61119",
+          "observed": 5.28,
+          "predicted": 5.331394057765153
+        },
+        {
+          "id": "CHEMBL291359",
+          "observed": 5.0,
+          "predicted": 5.177700168612025
+        },
+        {
+          "id": "CHEMBL59812",
+          "observed": 4.7,
+          "predicted": 5.240769087540323
+        },
+        {
+          "id": "CHEMBL168921",
+          "observed": 5.66,
+          "predicted": 6.335646375759656
+        },
+        {
+          "id": "CHEMBL353823",
+          "observed": 5.08,
+          "predicted": 5.972942710588024
+        },
+        {
+          "id": "CHEMBL2093928",
+          "observed": 6.38,
+          "predicted": 5.683063492063492
+        },
+        {
+          "id": "CHEMBL398793",
+          "observed": 6.89,
+          "predicted": 6.777259452093048
+        },
+        {
+          "id": "CHEMBL335718",
+          "observed": 5.89,
+          "predicted": 5.238246353993227
+        },
+        {
+          "id": "CHEMBL122721",
+          "observed": 4.57,
+          "predicted": 5.10599100578241
+        },
+        {
+          "id": "CHEMBL122397",
+          "observed": 6.05,
+          "predicted": 5.10599100578241
+        },
+        {
+          "id": "CHEMBL129946",
+          "observed": 6.48,
+          "predicted": 5.3732831633644125
+        },
+        {
+          "id": "CHEMBL3085377",
+          "observed": 5.14,
+          "predicted": 7.096375462037962
+        },
+        {
+          "id": "CHEMBL135577",
+          "observed": 5.34,
+          "predicted": 5.051848454410174
+        },
+        {
+          "id": "CHEMBL263666",
+          "observed": 5.33,
+          "predicted": 5.012080819384864
+        },
+        {
+          "id": "CHEMBL334439",
+          "observed": 5.16,
+          "predicted": 5.056501899275153
+        },
+        {
+          "id": "CHEMBL542891",
+          "observed": 6.52,
+          "predicted": 5.976375644841271
+        },
+        {
+          "id": "CHEMBL196018",
+          "observed": 7.05,
+          "predicted": 6.854349909812416
+        },
+        {
+          "id": "CHEMBL372112",
+          "observed": 7.3,
+          "predicted": 6.620926772619741
+        },
+        {
+          "id": "CHEMBL370934",
+          "observed": 7.22,
+          "predicted": 6.894386469606784
+        },
+        {
+          "id": "CHEMBL251123",
+          "observed": 6.85,
+          "predicted": 7.950262999673939
+        },
+        {
+          "id": "CHEMBL125086",
+          "observed": 8.52,
+          "predicted": 7.27674970801768
+        },
+        {
+          "id": "CHEMBL126996",
+          "observed": 6.14,
+          "predicted": 7.151014993426716
+        },
+        {
+          "id": "CHEMBL340611",
+          "observed": 7.37,
+          "predicted": 5.366622111742424
+        },
+        {
+          "id": "CHEMBL193368",
+          "observed": 6.77,
+          "predicted": 6.997909699675326
+        },
+        {
+          "id": "CHEMBL448154",
+          "observed": 6.31,
+          "predicted": 6.350380206382159
+        },
+        {
+          "id": "CHEMBL368278",
+          "observed": 5.28,
+          "predicted": 6.474585270718862
+        },
+        {
+          "id": "CHEMBL367625",
+          "observed": 5.495,
+          "predicted": 6.387744686476715
+        },
+        {
+          "id": "CHEMBL332765",
+          "observed": 7.54,
+          "predicted": 7.519959758991007
+        },
+        {
+          "id": "CHEMBL50245",
+          "observed": 6.0649999999999995,
+          "predicted": 7.137804217137034
+        },
+        {
+          "id": "CHEMBL14874",
+          "observed": 6.08,
+          "predicted": 7.059737513528143
+        },
+        {
+          "id": "CHEMBL137635",
+          "observed": 5.03,
+          "predicted": 5.419279712301588
+        },
+        {
+          "id": "CHEMBL62176",
+          "observed": 6.0,
+          "predicted": 5.157179897186148
+        },
+        {
+          "id": "CHEMBL258940",
+          "observed": 8.52,
+          "predicted": 7.642653189258662
+        },
+        {
+          "id": "CHEMBL193544",
+          "observed": 6.85,
+          "predicted": 6.809931743777058
+        },
+        {
+          "id": "CHEMBL194337",
+          "observed": 5.68,
+          "predicted": 6.567145262723389
+        },
+        {
+          "id": "CHEMBL234577",
+          "observed": 6.89,
+          "predicted": 6.730561426073928
+        },
+        {
+          "id": "CHEMBL340484",
+          "observed": 8.31,
+          "predicted": 8.320164725264688
+        },
+        {
+          "id": "CHEMBL51485",
+          "observed": 6.01,
+          "predicted": 6.106181955631174
+        },
+        {
+          "id": "CHEMBL258282",
+          "observed": 8.3,
+          "predicted": 7.939213064539627
+        },
+        {
+          "id": "CHEMBL120185",
+          "observed": 5.06,
+          "predicted": 5.7271089737519425
+        },
+        {
+          "id": "CHEMBL135861",
+          "observed": 4.89,
+          "predicted": 5.0735668662067095
+        },
+        {
+          "id": "CHEMBL137422",
+          "observed": 5.21,
+          "predicted": 5.1265582196347355
+        },
+        {
+          "id": "CHEMBL122260",
+          "observed": 5.01,
+          "predicted": 5.115793567109971
+        },
+        {
+          "id": "CHEMBL207410",
+          "observed": 7.1,
+          "predicted": 6.8027569630889975
+        },
+        {
+          "id": "CHEMBL337035",
+          "observed": 4.9,
+          "predicted": 5.8885055871212115
+        },
+        {
+          "id": "CHEMBL388978",
+          "observed": 7.154999999999999,
+          "predicted": 5.419847125270561
+        },
+        {
+          "id": "CHEMBL337026",
+          "observed": 6.7,
+          "predicted": 5.331965762536075
+        },
+        {
+          "id": "CHEMBL338049",
+          "observed": 7.77,
+          "predicted": 5.385628634559885
+        },
+        {
+          "id": "CHEMBL338155",
+          "observed": 6.58,
+          "predicted": 5.385628634559885
+        },
+        {
+          "id": "CHEMBL298637",
+          "observed": 6.77,
+          "predicted": 7.345442418779141
+        },
+        {
+          "id": "CHEMBL206782",
+          "observed": 7.51,
+          "predicted": 7.143787584464151
+        },
+        {
+          "id": "CHEMBL444337",
+          "observed": 5.89,
+          "predicted": 5.396139785388222
+        },
+        {
+          "id": "CHEMBL355019",
+          "observed": 6.13,
+          "predicted": 6.24089401614011
+        },
+        {
+          "id": "CHEMBL355891",
+          "observed": 6.08,
+          "predicted": 6.199233796325202
+        },
+        {
+          "id": "CHEMBL130049",
+          "observed": 5.62,
+          "predicted": 5.385710035624097
+        },
+        {
+          "id": "CHEMBL202244",
+          "observed": 5.05,
+          "predicted": 5.06770880794553
+        },
+        {
+          "id": "CHEMBL200976",
+          "observed": 5.55,
+          "predicted": 5.06770880794553
+        },
+        {
+          "id": "CHEMBL131653",
+          "observed": 4.61,
+          "predicted": 5.062178512546479
+        },
+        {
+          "id": "CHEMBL335932",
+          "observed": 5.19,
+          "predicted": 5.320564177489176
+        },
+        {
+          "id": "CHEMBL337027",
+          "observed": 6.8,
+          "predicted": 5.433864281204906
+        },
+        {
+          "id": "CHEMBL338935",
+          "observed": 6.66,
+          "predicted": 5.401076189348845
+        },
+        {
+          "id": "CHEMBL335931",
+          "observed": 5.46,
+          "predicted": 5.363747357503607
+        },
+        {
+          "id": "CHEMBL338449",
+          "observed": 4.87,
+          "predicted": 5.391834266774891
+        },
+        {
+          "id": "CHEMBL130163",
+          "observed": 5.58,
+          "predicted": 5.391834266774891
+        },
+        {
+          "id": "CHEMBL132348",
+          "observed": 7.51,
+          "predicted": 5.548677674062049
+        },
+        {
+          "id": "CHEMBL131426",
+          "observed": 5.96,
+          "predicted": 5.3925831013604455
+        },
+        {
+          "id": "CHEMBL131020",
+          "observed": 5.96,
+          "predicted": 5.459224395743144
+        },
+        {
+          "id": "CHEMBL335648",
+          "observed": 7.72,
+          "predicted": 5.428909650072149
+        },
+        {
+          "id": "CHEMBL392774",
+          "observed": 6.72,
+          "predicted": 6.65280730588856
+        },
+        {
+          "id": "CHEMBL157128",
+          "observed": 6.82,
+          "predicted": 6.531429321199633
+        },
+        {
+          "id": "CHEMBL256529",
+          "observed": 7.48,
+          "predicted": 7.371601765422078
+        },
+        {
+          "id": "CHEMBL256297",
+          "observed": 7.92,
+          "predicted": 7.333318431741871
+        },
+        {
+          "id": "CHEMBL257815",
+          "observed": 7.8,
+          "predicted": 7.381077985209235
+        },
+        {
+          "id": "CHEMBL195218",
+          "observed": 5.38,
+          "predicted": 5.840012652018119
+        },
+        {
+          "id": "CHEMBL201511",
+          "observed": 4.5,
+          "predicted": 4.992171681096681
+        },
+        {
+          "id": "CHEMBL116547",
+          "observed": 5.734999999999999,
+          "predicted": 5.488966701614359
+        },
+        {
+          "id": "CHEMBL324030",
+          "observed": 4.925,
+          "predicted": 5.189197800550144
+        },
+        {
+          "id": "CHEMBL119923",
+          "observed": 4.8,
+          "predicted": 5.237543906700937
+        },
+        {
+          "id": "CHEMBL326318",
+          "observed": 5.88,
+          "predicted": 5.463221537923885
+        },
+        {
+          "id": "CHEMBL326100",
+          "observed": 5.8,
+          "predicted": 5.368116579861111
+        },
+        {
+          "id": "CHEMBL143212",
+          "observed": 5.77,
+          "predicted": 5.281578750809038
+        },
+        {
+          "id": "CHEMBL119156",
+          "observed": 5.035,
+          "predicted": 5.477399497204187
+        },
+        {
+          "id": "CHEMBL115519",
+          "observed": 4.720000000000001,
+          "predicted": 5.771876058576839
+        },
+        {
+          "id": "CHEMBL118205",
+          "observed": 5.09,
+          "predicted": 5.4504804721320355
+        },
+        {
+          "id": "CHEMBL118109",
+          "observed": 4.725,
+          "predicted": 5.54341884018759
+        },
+        {
+          "id": "CHEMBL204223",
+          "observed": 5.2,
+          "predicted": 6.7029774167672596
+        },
+        {
+          "id": "CHEMBL248391",
+          "observed": 6.76,
+          "predicted": 6.963139029807001
+        },
+        {
+          "id": "CHEMBL1907764",
+          "observed": 6.85,
+          "predicted": 6.527045553058055
+        },
+        {
+          "id": "CHEMBL1907763",
+          "observed": 7.0,
+          "predicted": 6.547572941468255
+        },
+        {
+          "id": "CHEMBL283088",
+          "observed": 6.7,
+          "predicted": 6.8102828161421884
+        },
+        {
+          "id": "CHEMBL201307",
+          "observed": 6.1,
+          "predicted": 7.34250641684704
+        },
+        {
+          "id": "CHEMBL380972",
+          "observed": 6.4,
+          "predicted": 6.669026471705381
+        },
+        {
+          "id": "CHEMBL250524",
+          "observed": 7.1,
+          "predicted": 6.760935152434368
+        },
+        {
+          "id": "CHEMBL93423",
+          "observed": 6.41,
+          "predicted": 6.775927609629953
+        },
+        {
+          "id": "CHEMBL419137",
+          "observed": 8.0,
+          "predicted": 6.884050197111913
+        },
+        {
+          "id": "CHEMBL90540",
+          "observed": 7.08,
+          "predicted": 6.824093035089907
+        },
+        {
+          "id": "CHEMBL91484",
+          "observed": 7.57,
+          "predicted": 6.901347653995309
+        },
+        {
+          "id": "CHEMBL94019",
+          "observed": 6.04,
+          "predicted": 6.868638874233403
+        },
+        {
+          "id": "CHEMBL422066",
+          "observed": 6.37,
+          "predicted": 7.444186981247915
+        },
+        {
+          "id": "CHEMBL385471",
+          "observed": 8.05,
+          "predicted": 6.91234668786075
+        },
+        {
+          "id": "CHEMBL215786",
+          "observed": 8.52,
+          "predicted": 7.286120120320854
+        },
+        {
+          "id": "CHEMBL300791",
+          "observed": 8.0,
+          "predicted": 7.553541431648419
+        },
+        {
+          "id": "CHEMBL383246",
+          "observed": 7.6,
+          "predicted": 7.5388411897997845
+        },
+        {
+          "id": "CHEMBL207130",
+          "observed": 8.05,
+          "predicted": 7.685505912923881
+        },
+        {
+          "id": "CHEMBL378370",
+          "observed": 7.7,
+          "predicted": 7.491548550234489
+        },
+        {
+          "id": "CHEMBL213874",
+          "observed": 8.7,
+          "predicted": 7.218447440927127
+        },
+        {
+          "id": "CHEMBL330668",
+          "observed": 6.11,
+          "predicted": 7.029516488719613
+        },
+        {
+          "id": "CHEMBL53299",
+          "observed": 8.64,
+          "predicted": 8.480620188492066
+        },
+        {
+          "id": "CHEMBL388286",
+          "observed": 5.4,
+          "predicted": 7.182707086489897
+        },
+        {
+          "id": "CHEMBL225721",
+          "observed": 6.01,
+          "predicted": 7.279756182359305
+        },
+        {
+          "id": "CHEMBL122411",
+          "observed": 7.52,
+          "predicted": 7.461565462662338
+        },
+        {
+          "id": "CHEMBL60472",
+          "observed": 5.44,
+          "predicted": 5.320642846996755
+        },
+        {
+          "id": "CHEMBL301549",
+          "observed": 6.58,
+          "predicted": 7.194968372512908
+        },
+        {
+          "id": "CHEMBL205454",
+          "observed": 5.24,
+          "predicted": 6.3214723217754445
+        },
+        {
+          "id": "CHEMBL426124",
+          "observed": 5.835,
+          "predicted": 6.551038423035296
+        },
+        {
+          "id": "CHEMBL383444",
+          "observed": 5.755,
+          "predicted": 6.709523268138112
+        },
+        {
+          "id": "CHEMBL383121",
+          "observed": 5.12,
+          "predicted": 5.89916004594364
+        },
+        {
+          "id": "CHEMBL206347",
+          "observed": 5.525,
+          "predicted": 6.607963869463869
+        },
+        {
+          "id": "CHEMBL204715",
+          "observed": 5.619999999999999,
+          "predicted": 6.709577191298285
+        },
+        {
+          "id": "CHEMBL15202",
+          "observed": 7.17,
+          "predicted": 6.933362583423522
+        },
+        {
+          "id": "CHEMBL168656",
+          "observed": 5.68,
+          "predicted": 6.2808083042825205
+        },
+        {
+          "id": "CHEMBL355322",
+          "observed": 6.36,
+          "predicted": 6.220035257364164
+        },
+        {
+          "id": "CHEMBL169519",
+          "observed": 5.95,
+          "predicted": 6.331335635891883
+        },
+        {
+          "id": "CHEMBL120979",
+          "observed": 8.1,
+          "predicted": 7.428532457126208
+        },
+        {
+          "id": "CHEMBL292323",
+          "observed": 5.19,
+          "predicted": 5.1830203954338145
+        },
+        {
+          "id": "CHEMBL299707",
+          "observed": 4.0,
+          "predicted": 4.7256888162185025
+        },
+        {
+          "id": "CHEMBL247711",
+          "observed": 6.72,
+          "predicted": 6.672991591828309
+        },
+        {
+          "id": "CHEMBL381080",
+          "observed": 7.3,
+          "predicted": 7.237453701680266
+        },
+        {
+          "id": "CHEMBL273789",
+          "observed": 6.58,
+          "predicted": 7.06979201839827
+        },
+        {
+          "id": "CHEMBL514436",
+          "observed": 7.57,
+          "predicted": 7.614213401875898
+        },
+        {
+          "id": "CHEMBL15346",
+          "observed": 7.13,
+          "predicted": 7.192322783639976
+        },
+        {
+          "id": "CHEMBL493428",
+          "observed": 7.62,
+          "predicted": 7.274941282675657
+        },
+        {
+          "id": "CHEMBL14952",
+          "observed": 6.98,
+          "predicted": 7.170846221139977
+        },
+        {
+          "id": "CHEMBL400413",
+          "observed": 6.68,
+          "predicted": 6.453680790216728
+        },
+        {
+          "id": "CHEMBL382186",
+          "observed": 5.275,
+          "predicted": 6.7896876019813535
+        },
+        {
+          "id": "CHEMBL208358",
+          "observed": 6.96,
+          "predicted": 7.160896348183071
+        },
+        {
+          "id": "CHEMBL67057",
+          "observed": 8.35,
+          "predicted": 7.519133314168471
+        },
+        {
+          "id": "CHEMBL264382",
+          "observed": 8.96,
+          "predicted": 7.480750782377344
+        },
+        {
+          "id": "CHEMBL401930",
+          "observed": 5.8,
+          "predicted": 5.666183882263572
+        },
+        {
+          "id": "CHEMBL364623",
+          "observed": 5.28,
+          "predicted": 6.161456000249752
+        },
+        {
+          "id": "CHEMBL184750",
+          "observed": 6.19,
+          "predicted": 6.465975909073565
+        },
+        {
+          "id": "CHEMBL186080",
+          "observed": 6.82,
+          "predicted": 6.769115917849516
+        },
+        {
+          "id": "CHEMBL278287",
+          "observed": 4.31,
+          "predicted": 4.664065725940724
+        },
+        {
+          "id": "CHEMBL20926",
+          "observed": 4.19,
+          "predicted": 4.702545215028026
+        },
+        {
+          "id": "CHEMBL187431",
+          "observed": 4.53,
+          "predicted": 6.515347015224359
+        },
+        {
+          "id": "CHEMBL186001",
+          "observed": 6.7,
+          "predicted": 6.412737202814549
+        },
+        {
+          "id": "CHEMBL188522",
+          "observed": 6.47,
+          "predicted": 6.503019163041822
+        },
+        {
+          "id": "CHEMBL185853",
+          "observed": 6.29,
+          "predicted": 6.485675721934316
+        },
+        {
+          "id": "CHEMBL184311",
+          "observed": 5.49,
+          "predicted": 6.883365868246339
+        },
+        {
+          "id": "CHEMBL131577",
+          "observed": 5.0,
+          "predicted": 5.796945255525726
+        },
+        {
+          "id": "CHEMBL341522",
+          "observed": 8.25,
+          "predicted": 8.21000019173535
+        },
+        {
+          "id": "CHEMBL340898",
+          "observed": 8.46,
+          "predicted": 8.239857254030696
+        },
+        {
+          "id": "CHEMBL188304",
+          "observed": 7.0,
+          "predicted": 6.803498544337613
+        },
+        {
+          "id": "CHEMBL247100",
+          "observed": 6.68,
+          "predicted": 6.528710231695392
+        },
+        {
+          "id": "CHEMBL258694",
+          "observed": 6.82,
+          "predicted": 6.342239946338384
+        },
+        {
+          "id": "CHEMBL225930",
+          "observed": 5.66,
+          "predicted": 7.345411677038241
+        },
+        {
+          "id": "CHEMBL257430",
+          "observed": 8.1,
+          "predicted": 8.030576164287101
+        },
+        {
+          "id": "CHEMBL181742",
+          "observed": 7.3,
+          "predicted": 7.146563650932404
+        },
+        {
+          "id": "CHEMBL378145",
+          "observed": 5.47,
+          "predicted": 6.955632765671825
+        },
+        {
+          "id": "CHEMBL119982",
+          "observed": 6.06,
+          "predicted": 7.3919403600739555
+        },
+        {
+          "id": "CHEMBL120319",
+          "observed": 6.89,
+          "predicted": 7.482012973484847
+        },
+        {
+          "id": "CHEMBL121260",
+          "observed": 7.08,
+          "predicted": 7.573682898004772
+        },
+        {
+          "id": "CHEMBL104779",
+          "observed": 6.04,
+          "predicted": 6.4055276101069065
+        },
+        {
+          "id": "CHEMBL347161",
+          "observed": 4.77,
+          "predicted": 5.240702505597957
+        },
+        {
+          "id": "CHEMBL345837",
+          "observed": 4.92,
+          "predicted": 5.265583542356337
+        },
+        {
+          "id": "CHEMBL293986",
+          "observed": 4.0,
+          "predicted": 5.27532561712185
+        },
+        {
+          "id": "CHEMBL293251",
+          "observed": 4.94,
+          "predicted": 5.3276998257257455
+        },
+        {
+          "id": "CHEMBL291979",
+          "observed": 4.27,
+          "predicted": 5.166088404594793
+        },
+        {
+          "id": "CHEMBL293889",
+          "observed": 5.37,
+          "predicted": 5.218887191571704
+        },
+        {
+          "id": "CHEMBL293250",
+          "observed": 4.39,
+          "predicted": 5.142844612622875
+        },
+        {
+          "id": "CHEMBL64430",
+          "observed": 5.3,
+          "predicted": 5.107268476519395
+        },
+        {
+          "id": "CHEMBL293913",
+          "observed": 4.36,
+          "predicted": 5.122454276223164
+        },
+        {
+          "id": "CHEMBL62843",
+          "observed": 4.0,
+          "predicted": 5.148204623414779
+        },
+        {
+          "id": "CHEMBL304414",
+          "observed": 4.98,
+          "predicted": 5.1835473818154885
+        },
+        {
+          "id": "CHEMBL345862",
+          "observed": 4.33,
+          "predicted": 5.234595885497265
+        },
+        {
+          "id": "CHEMBL334915",
+          "observed": 5.46,
+          "predicted": 5.2441849704880505
+        },
+        {
+          "id": "CHEMBL206280",
+          "observed": 5.390000000000001,
+          "predicted": 6.862556817834944
+        },
+        {
+          "id": "CHEMBL205676",
+          "observed": 5.6850000000000005,
+          "predicted": 6.672917691076288
+        },
+        {
+          "id": "CHEMBL425402",
+          "observed": 5.765000000000001,
+          "predicted": 6.708071176219616
+        },
+        {
+          "id": "CHEMBL249511",
+          "observed": 6.48,
+          "predicted": 6.796696549620722
+        },
+        {
+          "id": "CHEMBL185637",
+          "observed": 6.96,
+          "predicted": 6.78064739357865
+        },
+        {
+          "id": "CHEMBL291701",
+          "observed": 6.17,
+          "predicted": 7.214253585997338
+        },
+        {
+          "id": "CHEMBL424853",
+          "observed": 5.57,
+          "predicted": 6.630810640661421
+        },
+        {
+          "id": "CHEMBL204965",
+          "observed": 5.49,
+          "predicted": 6.7074588073384955
+        },
+        {
+          "id": "CHEMBL203529",
+          "observed": 5.16,
+          "predicted": 5.986838893745144
+        },
+        {
+          "id": "CHEMBL205652",
+          "observed": 6.5,
+          "predicted": 7.317315780573592
+        },
+        {
+          "id": "CHEMBL182254",
+          "observed": 7.5,
+          "predicted": 7.155855476554699
+        },
+        {
+          "id": "CHEMBL379093",
+          "observed": 7.1,
+          "predicted": 7.111103624413785
+        },
+        {
+          "id": "CHEMBL246493",
+          "observed": 6.25,
+          "predicted": 6.94674620448996
+        },
+        {
+          "id": "CHEMBL392273",
+          "observed": 7.48,
+          "predicted": 6.720755170437201
+        },
+        {
+          "id": "CHEMBL392664",
+          "observed": 6.96,
+          "predicted": 6.936912033105786
+        },
+        {
+          "id": "CHEMBL246073",
+          "observed": 6.72,
+          "predicted": 6.77550461023352
+        },
+        {
+          "id": "CHEMBL144770",
+          "observed": 5.9399999999999995,
+          "predicted": 5.56560035401945
+        },
+        {
+          "id": "CHEMBL432428",
+          "observed": 6.11,
+          "predicted": 5.554233650767638
+        },
+        {
+          "id": "CHEMBL333553",
+          "observed": 5.345000000000001,
+          "predicted": 5.558872616826087
+        },
+        {
+          "id": "CHEMBL67535",
+          "observed": 5.94,
+          "predicted": 5.551821868008932
+        },
+        {
+          "id": "CHEMBL144908",
+          "observed": 6.3,
+          "predicted": 5.546017013661889
+        },
+        {
+          "id": "CHEMBL55994",
+          "observed": 5.01,
+          "predicted": 5.321894986437174
+        },
+        {
+          "id": "CHEMBL245800",
+          "observed": 5.68,
+          "predicted": 5.789585994127402
+        },
+        {
+          "id": "CHEMBL408683",
+          "observed": 6.4,
+          "predicted": 6.338469857139388
+        },
+        {
+          "id": "CHEMBL248116",
+          "observed": 7.44,
+          "predicted": 7.301376643668831
+        },
+        {
+          "id": "CHEMBL293991",
+          "observed": 6.28,
+          "predicted": 5.5372016177399015
+        },
+        {
+          "id": "CHEMBL300083",
+          "observed": 5.68,
+          "predicted": 6.420458197271479
+        },
+        {
+          "id": "CHEMBL432416",
+          "observed": 4.85,
+          "predicted": 5.254641406076562
+        },
+        {
+          "id": "CHEMBL112925",
+          "observed": 5.06,
+          "predicted": 5.254979084197054
+        },
+        {
+          "id": "CHEMBL205966",
+          "observed": 7.52,
+          "predicted": 7.220380085712902
+        },
+        {
+          "id": "CHEMBL332612",
+          "observed": 8.3,
+          "predicted": 7.790887692602533
+        },
+        {
+          "id": "CHEMBL54474",
+          "observed": 6.03,
+          "predicted": 7.430394755765067
+        },
+        {
+          "id": "CHEMBL206197",
+          "observed": 5.234999999999999,
+          "predicted": 6.972636760028171
+        },
+        {
+          "id": "CHEMBL203132",
+          "observed": 5.77,
+          "predicted": 7.176333246180901
+        },
+        {
+          "id": "CHEMBL325949",
+          "observed": 5.11,
+          "predicted": 5.265536506809164
+        },
+        {
+          "id": "CHEMBL205235",
+          "observed": 7.38,
+          "predicted": 7.233569688037662
+        },
+        {
+          "id": "CHEMBL204625",
+          "observed": 7.2,
+          "predicted": 7.293450744047621
+        },
+        {
+          "id": "CHEMBL354033",
+          "observed": 5.57,
+          "predicted": 6.21022077922078
+        },
+        {
+          "id": "CHEMBL171545",
+          "observed": 5.82,
+          "predicted": 6.4284252030955145
+        },
+        {
+          "id": "CHEMBL168829",
+          "observed": 4.87,
+          "predicted": 5.976327052981741
+        },
+        {
+          "id": "CHEMBL122243",
+          "observed": 6.1,
+          "predicted": 5.66440361652237
+        },
+        {
+          "id": "CHEMBL204638",
+          "observed": 8.82,
+          "predicted": 8.694965575656981
+        },
+        {
+          "id": "CHEMBL203661",
+          "observed": 8.89,
+          "predicted": 8.699861476631007
+        },
+        {
+          "id": "CHEMBL90595",
+          "observed": 7.24,
+          "predicted": 7.241914666583412
+        },
+        {
+          "id": "CHEMBL202556",
+          "observed": 8.51,
+          "predicted": 8.475535402531495
+        },
+        {
+          "id": "CHEMBL138940",
+          "observed": 7.85,
+          "predicted": 8.390603000645184
+        },
+        {
+          "id": "CHEMBL136058",
+          "observed": 8.06,
+          "predicted": 8.051489460105866
+        },
+        {
+          "id": "CHEMBL94109",
+          "observed": 7.17,
+          "predicted": 6.912243302444082
+        },
+        {
+          "id": "CHEMBL316127",
+          "observed": 7.13,
+          "predicted": 6.901887311733406
+        },
+        {
+          "id": "CHEMBL545006",
+          "observed": 5.75,
+          "predicted": 5.890259438131316
+        },
+        {
+          "id": "CHEMBL14627",
+          "observed": 7.13,
+          "predicted": 7.127047921176048
+        },
+        {
+          "id": "CHEMBL387187",
+          "observed": 7.68,
+          "predicted": 6.596167732094291
+        },
+        {
+          "id": "CHEMBL345641",
+          "observed": 4.0,
+          "predicted": 4.847854065205628
+        },
+        {
+          "id": "CHEMBL50415",
+          "observed": 5.25,
+          "predicted": 5.519759354707796
+        },
+        {
+          "id": "CHEMBL48650",
+          "observed": 5.11,
+          "predicted": 5.504059704184707
+        },
+        {
+          "id": "CHEMBL319620",
+          "observed": 5.470000000000001,
+          "predicted": 5.218771486239455
+        },
+        {
+          "id": "CHEMBL206848",
+          "observed": 5.36,
+          "predicted": 6.537850045874267
+        },
+        {
+          "id": "CHEMBL205148",
+          "observed": 6.0,
+          "predicted": 6.675202731903513
+        },
+        {
+          "id": "CHEMBL265629",
+          "observed": 6.46,
+          "predicted": 6.585087696504881
+        },
+        {
+          "id": "CHEMBL212201",
+          "observed": 7.3,
+          "predicted": 7.728372172619042
+        },
+        {
+          "id": "CHEMBL1794063",
+          "observed": 7.72,
+          "predicted": 7.671479825036071
+        },
+        {
+          "id": "CHEMBL122785",
+          "observed": 4.99,
+          "predicted": 5.166083309832526
+        },
+        {
+          "id": "CHEMBL123045",
+          "observed": 5.27,
+          "predicted": 4.943911006441476
+        },
+        {
+          "id": "CHEMBL233325",
+          "observed": 7.140000000000001,
+          "predicted": 6.8224765032710355
+        },
+        {
+          "id": "CHEMBL205047",
+          "observed": 7.12,
+          "predicted": 7.425651145035522
+        },
+        {
+          "id": "CHEMBL123046",
+          "observed": 4.38,
+          "predicted": 5.20488804129898
+        },
+        {
+          "id": "CHEMBL122182",
+          "observed": 8.1,
+          "predicted": 7.585730517919577
+        },
+        {
+          "id": "CHEMBL14932",
+          "observed": 7.01,
+          "predicted": 7.0746553030303065
+        },
+        {
+          "id": "CHEMBL121954",
+          "observed": 9.0,
+          "predicted": 7.655442222014097
+        },
+        {
+          "id": "CHEMBL312818",
+          "observed": 8.65,
+          "predicted": 7.647216752344879
+        },
+        {
+          "id": "CHEMBL54784",
+          "observed": 5.84,
+          "predicted": 6.139388852813857
+        },
+        {
+          "id": "CHEMBL79215",
+          "observed": 9.0,
+          "predicted": 7.856306722357506
+        },
+        {
+          "id": "CHEMBL150280",
+          "observed": 6.58,
+          "predicted": 6.026677191038127
+        },
+        {
+          "id": "CHEMBL247127",
+          "observed": 6.09,
+          "predicted": 6.526561257665944
+        }
+      ],
+      "train_scaffolds": 424,
+      "test_scaffolds": 107
+    },
+    {
+      "symbol": "PSEN1",
+      "target_id": "CHEMBL2473",
+      "endpoint": "pIC50",
+      "status": "review",
+      "reason": "骨架留出测试未通过发布门槛，仅展示评测",
+      "raw_count": 157,
+      "source_total": 157,
+      "structure_count": 110,
+      "scaffold_count": 42,
+      "invalid_count": 1,
+      "discordant_structure_count": 1,
+      "retrieved_at": "2026-09-08T06:59:17.519491+00:00",
+      "data_sha256": "0f39822397710f333aaf42cafce3c0da130c54d2f3cec815a30f42c0bb08eb10",
+      "predictions": [
+        {
+          "identifier": "CHEMBL392068",
+          "name": "CHEMBL392068",
+          "input_smiles": "C[C@H](NC(=O)[C@@H](O)c1cc(F)cc(F)c1)C(=O)N[C@@H]1C(=O)N(C)c2ccccc2-c2ccccc21",
+          "predicted": null,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.16842105263157894,
+          "domain": "outside",
+          "status": "withheld"
+        },
+        {
+          "identifier": "CHEMBL1091513",
+          "name": "MRK-560",
+          "input_smiles": "O=S(=O)(NC1CCC(c2cc(F)ccc2F)(S(=O)(=O)c2ccc(Cl)cc2)CC1)C(F)(F)F",
+          "predicted": null,
+          "observed": 9.19,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.527027027027027,
+          "domain": "inside",
+          "status": "withheld"
+        },
+        {
+          "identifier": "CHEMBL2159510",
+          "name": "CHEMBL2159510",
+          "input_smiles": "CCS(=O)(=O)CC[C@@H]1OCC[C@@]2(S(=O)(=O)c3ccc(Cl)cc3)c3c(F)ccc(F)c3OC[C@@H]12",
+          "predicted": null,
+          "observed": 8.41,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.275,
+          "domain": "outside",
+          "status": "withheld"
+        },
+        {
+          "identifier": "CHEMBL3942982",
+          "name": "CHEMBL3942982",
+          "input_smiles": "Cc1cn(-c2ccc3n(c2=O)CCN([C@@H](C)[C@@H]2CC[C@H](c4cc(F)c(C(F)(F)F)c(F)c4)O2)C3=O)cn1",
+          "predicted": null,
+          "observed": 8.48,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.5421686746987951,
+          "domain": "inside",
+          "status": "withheld"
+        }
+      ],
+      "train_count": 86,
+      "test_count": 24,
+      "metrics": {
+        "mae": 0.6819133685148682,
+        "rmse": 0.7830561919512632,
+        "r2": -0.03728327973473067,
+        "baseline_rmse": 2.1627369812346573
+      },
+      "quality_gate": {
+        "passed": false,
+        "max_rmse": 1.2,
+        "baseline_ratio": 0.9,
+        "min_r2": 0
+      },
+      "test_points": [
+        {
+          "id": "CHEMBL2398569",
+          "observed": 4.44,
+          "predicted": 5.384316263199627
+        },
+        {
+          "id": "CHEMBL2396675",
+          "observed": 4.4,
+          "predicted": 5.401295950699627
+        },
+        {
+          "id": "CHEMBL2398570",
+          "observed": 4.57,
+          "predicted": 5.689212588973525
+        },
+        {
+          "id": "CHEMBL2398578",
+          "observed": 4.5,
+          "predicted": 5.73212560980686
+        },
+        {
+          "id": "CHEMBL3397708",
+          "observed": 4.92,
+          "predicted": 5.140204144155477
+        },
+        {
+          "id": "CHEMBL3397717",
+          "observed": 6.1,
+          "predicted": 5.478891400995858
+        },
+        {
+          "id": "CHEMBL3397719",
+          "observed": 5.34,
+          "predicted": 5.271144959416604
+        },
+        {
+          "id": "CHEMBL3397722",
+          "observed": 4.7,
+          "predicted": 5.5065674764828705
+        },
+        {
+          "id": "CHEMBL1819479",
+          "observed": 5.92,
+          "predicted": 5.478891400995858
+        },
+        {
+          "id": "CHEMBL3397712",
+          "observed": 5.31,
+          "predicted": 5.478891400995858
+        },
+        {
+          "id": "CHEMBL3397716",
+          "observed": 5.7,
+          "predicted": 5.478891400995858
+        },
+        {
+          "id": "CHEMBL3397715",
+          "observed": 5.16,
+          "predicted": 5.4944289009958585
+        },
+        {
+          "id": "CHEMBL3397723",
+          "observed": 5.3,
+          "predicted": 5.247015461310543
+        },
+        {
+          "id": "CHEMBL3397710",
+          "observed": 4.71,
+          "predicted": 5.232645297620068
+        },
+        {
+          "id": "CHEMBL3397718",
+          "observed": 4.49,
+          "predicted": 5.388984754690774
+        },
+        {
+          "id": "CHEMBL2398568",
+          "observed": 4.47,
+          "predicted": 5.531052234519976
+        },
+        {
+          "id": "CHEMBL2398577",
+          "observed": 4.54,
+          "predicted": 5.5442594044333955
+        },
+        {
+          "id": "CHEMBL2398567",
+          "observed": 4.64,
+          "predicted": 5.531052234519976
+        },
+        {
+          "id": "CHEMBL2398576",
+          "observed": 4.525,
+          "predicted": 5.5442594044333955
+        },
+        {
+          "id": "CHEMBL2398579",
+          "observed": 4.46,
+          "predicted": 5.531052234519976
+        },
+        {
+          "id": "CHEMBL2398575",
+          "observed": 4.42,
+          "predicted": 5.5442594044333955
+        },
+        {
+          "id": "CHEMBL2398573",
+          "observed": 4.6,
+          "predicted": 5.487979996514923
+        },
+        {
+          "id": "CHEMBL3960512",
+          "observed": 7.28,
+          "predicted": 7.844757999639247
+        },
+        {
+          "id": "CHEMBL3939251",
+          "observed": 6.73,
+          "predicted": 6.641589832563271
+        }
+      ],
+      "train_scaffolds": 33,
+      "test_scaffolds": 9
+    },
+    {
+      "symbol": "APP",
+      "target_id": "CHEMBL2487",
+      "endpoint": "pIC50",
+      "status": "validated",
+      "reason": "",
+      "raw_count": 1539,
+      "source_total": 1539,
+      "structure_count": 1143,
+      "scaffold_count": 495,
+      "invalid_count": 0,
+      "discordant_structure_count": 21,
+      "retrieved_at": "2026-09-08T06:59:38.294271+00:00",
+      "data_sha256": "e46a5ef2a339fff67d4478940c8bafbacb154bccca7e9a693e51ecc7fb45f792",
+      "predictions": [
+        {
+          "identifier": "CHEMBL3989948",
+          "name": "LANABECESTAT",
+          "input_smiles": "CC#Cc1cncc(-c2ccc3c(c2)[C@@]2(N=C(C)C(N)=N2)[C@]2(CC[C@H](OC)CC2)C3)c1",
+          "predicted": 8.380533552515192,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.8571428571428571,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL384465",
+          "name": "CHEMBL384465",
+          "input_smiles": "COc1cc(/C=C/C(O)=C/C(=O)/C=C/c2ccc(OCCCF)c(OC)c2)ccc1O",
+          "predicted": 5.361455209918167,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.5714285714285714,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL74704",
+          "name": "CHEMBL74704",
+          "input_smiles": "O=C(O)c1cc(/C=C/c2ccc(/C=C/c3ccc(O)c(C(=O)O)c3)c(Br)c2)ccc1O",
+          "predicted": 5.2147123523178225,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.6842105263157895,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL76112",
+          "name": "CHEMBL76112",
+          "input_smiles": "O=C(O)c1cc(/C=C\\c2ccc(/C=C\\c3ccc(O)c(C(=O)O)c3)c(Br)c2)ccc1O",
+          "predicted": 5.2147123523178225,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.6842105263157895,
+          "domain": "inside",
+          "status": "available"
+        }
+      ],
+      "train_count": 900,
+      "test_count": 243,
+      "metrics": {
+        "mae": 0.49778972170688623,
+        "rmse": 0.6475213980473589,
+        "r2": 0.721087879931753,
+        "baseline_rmse": 1.2420947145187402
+      },
+      "quality_gate": {
+        "passed": true,
+        "max_rmse": 1.2,
+        "baseline_ratio": 0.9,
+        "min_r2": 0
+      },
+      "test_points": [
+        {
+          "id": "CHEMBL4175715",
+          "observed": 4.9,
+          "predicted": 5.417511578959236
+        },
+        {
+          "id": "CHEMBL5570318",
+          "observed": 4.9,
+          "predicted": 5.697071812274223
+        },
+        {
+          "id": "CHEMBL3653663",
+          "observed": 7.3149999999999995,
+          "predicted": 6.211607148623944
+        },
+        {
+          "id": "CHEMBL4871044",
+          "observed": 4.27,
+          "predicted": 4.848946638257576
+        },
+        {
+          "id": "CHEMBL3087679",
+          "observed": 5.335,
+          "predicted": 5.1922030708874445
+        },
+        {
+          "id": "CHEMBL4640668",
+          "observed": 4.78,
+          "predicted": 4.61808193880772
+        },
+        {
+          "id": "CHEMBL4641877",
+          "observed": 4.7,
+          "predicted": 4.672063629599566
+        },
+        {
+          "id": "CHEMBL513978",
+          "observed": 4.69,
+          "predicted": 4.717522204184703
+        },
+        {
+          "id": "CHEMBL38",
+          "observed": 6.75,
+          "predicted": 5.465011468479435
+        },
+        {
+          "id": "CHEMBL986",
+          "observed": 6.75,
+          "predicted": 5.705108687319624
+        },
+        {
+          "id": "CHEMBL81379",
+          "observed": 6.75,
+          "predicted": 5.6614517056727935
+        },
+        {
+          "id": "CHEMBL4111183",
+          "observed": 7.24,
+          "predicted": 6.909619794701824
+        },
+        {
+          "id": "CHEMBL2386721",
+          "observed": 8.15,
+          "predicted": 7.659555867309775
+        },
+        {
+          "id": "CHEMBL3582126",
+          "observed": 4.08,
+          "predicted": 5.139976605339106
+        },
+        {
+          "id": "CHEMBL3582127",
+          "observed": 4.55,
+          "predicted": 5.133163088474027
+        },
+        {
+          "id": "CHEMBL3582128",
+          "observed": 4.46,
+          "predicted": 5.196488931727996
+        },
+        {
+          "id": "CHEMBL5084378",
+          "observed": 9.0,
+          "predicted": 8.516487917117603
+        },
+        {
+          "id": "CHEMBL5085412",
+          "observed": 8.59,
+          "predicted": 8.521332187950936
+        },
+        {
+          "id": "CHEMBL5093303",
+          "observed": 9.0,
+          "predicted": 8.531667976641412
+        },
+        {
+          "id": "CHEMBL2386719",
+          "observed": 7.85,
+          "predicted": 7.15655008177586
+        },
+        {
+          "id": "CHEMBL4113786",
+          "observed": 7.72,
+          "predicted": 7.048261517215421
+        },
+        {
+          "id": "CHEMBL4107314",
+          "observed": 7.21,
+          "predicted": 7.049282251342407
+        },
+        {
+          "id": "CHEMBL2386720",
+          "observed": 8.1,
+          "predicted": 7.2905881995608555
+        },
+        {
+          "id": "CHEMBL2386723",
+          "observed": 7.57,
+          "predicted": 6.945412180614523
+        },
+        {
+          "id": "CHEMBL4112589",
+          "observed": 7.18,
+          "predicted": 6.993650347482378
+        },
+        {
+          "id": "CHEMBL2386724",
+          "observed": 7.92,
+          "predicted": 6.964373930409865
+        },
+        {
+          "id": "CHEMBL4115329",
+          "observed": 7.35,
+          "predicted": 6.938231370886056
+        },
+        {
+          "id": "CHEMBL4109969",
+          "observed": 7.06,
+          "predicted": 6.992990535072565
+        },
+        {
+          "id": "CHEMBL4115141",
+          "observed": 6.6,
+          "predicted": 6.9826950027403125
+        },
+        {
+          "id": "CHEMBL4111699",
+          "observed": 7.24,
+          "predicted": 6.968431271679707
+        },
+        {
+          "id": "CHEMBL4106556",
+          "observed": 7.06,
+          "predicted": 6.8515892022907625
+        },
+        {
+          "id": "CHEMBL3582132",
+          "observed": 5.92,
+          "predicted": 4.997220365485209
+        },
+        {
+          "id": "CHEMBL450926",
+          "observed": 5.57,
+          "predicted": 5.379455742694807
+        },
+        {
+          "id": "CHEMBL549959",
+          "observed": 4.87,
+          "predicted": 5.07119862914863
+        },
+        {
+          "id": "CHEMBL3653713",
+          "observed": 6.74,
+          "predicted": 6.9991719225066165
+        },
+        {
+          "id": "CHEMBL3672720",
+          "observed": 7.96,
+          "predicted": 7.106175396983528
+        },
+        {
+          "id": "CHEMBL3653729",
+          "observed": 4.79,
+          "predicted": 6.037406522190026
+        },
+        {
+          "id": "CHEMBL6032095",
+          "observed": 6.365,
+          "predicted": 6.038471152871844
+        },
+        {
+          "id": "CHEMBL392060",
+          "observed": 8.285,
+          "predicted": 7.769411677047361
+        },
+        {
+          "id": "CHEMBL236189",
+          "observed": 7.57,
+          "predicted": 7.524415811281183
+        },
+        {
+          "id": "CHEMBL236186",
+          "observed": 7.6,
+          "predicted": 7.102216471896156
+        },
+        {
+          "id": "CHEMBL429448",
+          "observed": 7.1899999999999995,
+          "predicted": 7.094536956879921
+        },
+        {
+          "id": "CHEMBL239859",
+          "observed": 8.46,
+          "predicted": 7.832862713077306
+        },
+        {
+          "id": "CHEMBL236190",
+          "observed": 7.755,
+          "predicted": 7.559802646147711
+        },
+        {
+          "id": "CHEMBL236187",
+          "observed": 7.37,
+          "predicted": 7.168819211344209
+        },
+        {
+          "id": "CHEMBL239858",
+          "observed": 8.6,
+          "predicted": 7.775360583522835
+        },
+        {
+          "id": "CHEMBL4848103",
+          "observed": 4.32,
+          "predicted": 4.495354635815574
+        },
+        {
+          "id": "CHEMBL4850411",
+          "observed": 4.0,
+          "predicted": 5.6370065355268695
+        },
+        {
+          "id": "CHEMBL4873939",
+          "observed": 4.34,
+          "predicted": 4.90587971793831
+        },
+        {
+          "id": "CHEMBL5415164",
+          "observed": 4.21,
+          "predicted": 5.068799305555556
+        },
+        {
+          "id": "CHEMBL2402074",
+          "observed": 4.88,
+          "predicted": 5.023236483134921
+        },
+        {
+          "id": "CHEMBL5198252",
+          "observed": 4.99,
+          "predicted": 5.550506249436324
+        },
+        {
+          "id": "CHEMBL5200867",
+          "observed": 5.4,
+          "predicted": 5.703891283774945
+        },
+        {
+          "id": "CHEMBL76",
+          "observed": 5.025,
+          "predicted": 5.144291663718228
+        },
+        {
+          "id": "CHEMBL4857779",
+          "observed": 5.4,
+          "predicted": 4.943604867701741
+        },
+        {
+          "id": "CHEMBL3593280",
+          "observed": 4.58,
+          "predicted": 5.497367923656206
+        },
+        {
+          "id": "CHEMBL4453548",
+          "observed": 4.8,
+          "predicted": 5.480024293154759
+        },
+        {
+          "id": "CHEMBL3403818",
+          "observed": 6.89,
+          "predicted": 6.892210840461627
+        },
+        {
+          "id": "CHEMBL3403824",
+          "observed": 6.77,
+          "predicted": 6.858325806138306
+        },
+        {
+          "id": "CHEMBL4109860",
+          "observed": 6.35,
+          "predicted": 6.964504188346373
+        },
+        {
+          "id": "CHEMBL4848375",
+          "observed": 5.35,
+          "predicted": 5.056759698808137
+        },
+        {
+          "id": "CHEMBL248338",
+          "observed": 5.57,
+          "predicted": 5.334027546672081
+        },
+        {
+          "id": "CHEMBL427877",
+          "observed": 5.64,
+          "predicted": 5.603153222818851
+        },
+        {
+          "id": "CHEMBL4294375",
+          "observed": 5.23,
+          "predicted": 5.260782228968951
+        },
+        {
+          "id": "CHEMBL2059393",
+          "observed": 5.48,
+          "predicted": 5.23433536368146
+        },
+        {
+          "id": "CHEMBL2402163",
+          "observed": 4.97,
+          "predicted": 5.321326918914419
+        },
+        {
+          "id": "CHEMBL248131",
+          "observed": 6.16,
+          "predicted": 5.195126669597767
+        },
+        {
+          "id": "CHEMBL247927",
+          "observed": 6.05,
+          "predicted": 5.601077767371519
+        },
+        {
+          "id": "CHEMBL5412178",
+          "observed": 4.35,
+          "predicted": 5.093948010236293
+        },
+        {
+          "id": "CHEMBL2402160",
+          "observed": 5.19,
+          "predicted": 5.318804994311244
+        },
+        {
+          "id": "CHEMBL2402161",
+          "observed": 4.85,
+          "predicted": 5.106871146995368
+        },
+        {
+          "id": "CHEMBL1088617",
+          "observed": 7.39,
+          "predicted": 6.895219824272949
+        },
+        {
+          "id": "CHEMBL3099500",
+          "observed": 4.29,
+          "predicted": 6.027681511544012
+        },
+        {
+          "id": "CHEMBL5785587",
+          "observed": 5.68,
+          "predicted": 6.008839399836276
+        },
+        {
+          "id": "CHEMBL5800721",
+          "observed": 5.52,
+          "predicted": 5.749800816457849
+        },
+        {
+          "id": "CHEMBL4475538",
+          "observed": 7.22,
+          "predicted": 5.7012338634455855
+        },
+        {
+          "id": "CHEMBL4870723",
+          "observed": 5.18,
+          "predicted": 5.568672355422356
+        },
+        {
+          "id": "CHEMBL4850080",
+          "observed": 4.28,
+          "predicted": 4.433330174686423
+        },
+        {
+          "id": "CHEMBL4851224",
+          "observed": 4.25,
+          "predicted": 4.511242724289599
+        },
+        {
+          "id": "CHEMBL4863425",
+          "observed": 4.08,
+          "predicted": 4.5329214941308695
+        },
+        {
+          "id": "CHEMBL248327",
+          "observed": 6.3,
+          "predicted": 5.253709442900849
+        },
+        {
+          "id": "CHEMBL248133",
+          "observed": 5.89,
+          "predicted": 5.02415752840909
+        },
+        {
+          "id": "CHEMBL248122",
+          "observed": 5.96,
+          "predicted": 5.277165327380952
+        },
+        {
+          "id": "CHEMBL2048314",
+          "observed": 7.5,
+          "predicted": 6.653544365530301
+        },
+        {
+          "id": "CHEMBL2048313",
+          "observed": 7.46,
+          "predicted": 6.677929136228355
+        },
+        {
+          "id": "CHEMBL93124",
+          "observed": 7.72,
+          "predicted": 6.695277897276337
+        },
+        {
+          "id": "CHEMBL579205",
+          "observed": 7.62,
+          "predicted": 6.800579888167391
+        },
+        {
+          "id": "CHEMBL247725",
+          "observed": 6.05,
+          "predicted": 5.245332037146879
+        },
+        {
+          "id": "CHEMBL247931",
+          "observed": 6.22,
+          "predicted": 5.006232035759379
+        },
+        {
+          "id": "CHEMBL247674",
+          "observed": 6.3,
+          "predicted": 5.3028549420197875
+        },
+        {
+          "id": "CHEMBL3815004",
+          "observed": 4.46,
+          "predicted": 4.860182826548452
+        },
+        {
+          "id": "CHEMBL1077196",
+          "observed": 6.57,
+          "predicted": 6.956126299741925
+        },
+        {
+          "id": "CHEMBL2146608",
+          "observed": 5.52,
+          "predicted": 5.507788682584773
+        },
+        {
+          "id": "CHEMBL4877566",
+          "observed": 4.3,
+          "predicted": 4.798559613997114
+        },
+        {
+          "id": "CHEMBL2152916",
+          "observed": 8.64,
+          "predicted": 7.947872630321065
+        },
+        {
+          "id": "CHEMBL3653698",
+          "observed": 7.645,
+          "predicted": 7.347162002190524
+        },
+        {
+          "id": "CHEMBL3653696",
+          "observed": 6.12,
+          "predicted": 6.252638348890694
+        },
+        {
+          "id": "CHEMBL3672730",
+          "observed": 8.35,
+          "predicted": 8.52029352152244
+        },
+        {
+          "id": "CHEMBL4107875",
+          "observed": 7.09,
+          "predicted": 7.031590921751857
+        },
+        {
+          "id": "CHEMBL4110143",
+          "observed": 6.27,
+          "predicted": 7.061508778894717
+        },
+        {
+          "id": "CHEMBL2386722",
+          "observed": 7.31,
+          "predicted": 7.328253517316012
+        },
+        {
+          "id": "CHEMBL4108431",
+          "observed": 6.42,
+          "predicted": 6.937288633762068
+        },
+        {
+          "id": "CHEMBL4845912",
+          "observed": 5.18,
+          "predicted": 4.6639052072059854
+        },
+        {
+          "id": "CHEMBL4646459",
+          "observed": 4.53,
+          "predicted": 4.634554103535353
+        },
+        {
+          "id": "CHEMBL3672723",
+          "observed": 8.05,
+          "predicted": 8.444220359333269
+        },
+        {
+          "id": "CHEMBL4876605",
+          "observed": 4.66,
+          "predicted": 5.61036644796176
+        },
+        {
+          "id": "CHEMBL4849121",
+          "observed": 5.47,
+          "predicted": 4.999181177849929
+        },
+        {
+          "id": "CHEMBL4850421",
+          "observed": 5.5,
+          "predicted": 5.031418119900933
+        },
+        {
+          "id": "CHEMBL4849442",
+          "observed": 4.19,
+          "predicted": 4.709170780348125
+        },
+        {
+          "id": "CHEMBL4868950",
+          "observed": 4.74,
+          "predicted": 4.836055325663919
+        },
+        {
+          "id": "CHEMBL396917",
+          "observed": 5.75,
+          "predicted": 5.0181985254329025
+        },
+        {
+          "id": "CHEMBL247929",
+          "observed": 5.96,
+          "predicted": 5.258982263222891
+        },
+        {
+          "id": "CHEMBL245688",
+          "observed": 7.0,
+          "predicted": 5.267133829972111
+        },
+        {
+          "id": "CHEMBL427878",
+          "observed": 5.96,
+          "predicted": 5.283933735535297
+        },
+        {
+          "id": "CHEMBL247727",
+          "observed": 5.85,
+          "predicted": 5.290631652201965
+        },
+        {
+          "id": "CHEMBL5183237",
+          "observed": 5.33,
+          "predicted": 5.3153630805826095
+        },
+        {
+          "id": "CHEMBL5175279",
+          "observed": 5.26,
+          "predicted": 5.126803955853172
+        },
+        {
+          "id": "CHEMBL5176644",
+          "observed": 5.18,
+          "predicted": 5.119439186507934
+        },
+        {
+          "id": "CHEMBL5189854",
+          "observed": 5.335,
+          "predicted": 5.229630239898987
+        },
+        {
+          "id": "CHEMBL258632",
+          "observed": 4.835,
+          "predicted": 5.2037471827651505
+        },
+        {
+          "id": "CHEMBL258741",
+          "observed": 4.9,
+          "predicted": 5.10404709934163
+        },
+        {
+          "id": "CHEMBL247530",
+          "observed": 5.96,
+          "predicted": 5.337706205773394
+        },
+        {
+          "id": "CHEMBL247728",
+          "observed": 5.72,
+          "predicted": 5.390123998917749
+        },
+        {
+          "id": "CHEMBL2402067",
+          "observed": 5.12,
+          "predicted": 5.354332996604091
+        },
+        {
+          "id": "CHEMBL2402063",
+          "observed": 4.74,
+          "predicted": 5.036354629138222
+        },
+        {
+          "id": "CHEMBL2402075",
+          "observed": 4.99,
+          "predicted": 5.0338891653485405
+        },
+        {
+          "id": "CHEMBL247726",
+          "observed": 5.77,
+          "predicted": 5.293499228896103
+        },
+        {
+          "id": "CHEMBL247932",
+          "observed": 6.0,
+          "predicted": 5.142018709415586
+        },
+        {
+          "id": "CHEMBL391205",
+          "observed": 6.1,
+          "predicted": 5.577161310391001
+        },
+        {
+          "id": "CHEMBL247930",
+          "observed": 6.22,
+          "predicted": 4.958184154040405
+        },
+        {
+          "id": "CHEMBL247524",
+          "observed": 6.16,
+          "predicted": 5.226684222548288
+        },
+        {
+          "id": "CHEMBL247328",
+          "observed": 6.1,
+          "predicted": 5.258450380782412
+        },
+        {
+          "id": "CHEMBL255493",
+          "observed": 5.31,
+          "predicted": 4.712823658459597
+        },
+        {
+          "id": "CHEMBL377324",
+          "observed": 4.88,
+          "predicted": 4.6973547979798
+        },
+        {
+          "id": "CHEMBL5427350",
+          "observed": 4.45,
+          "predicted": 5.019805048250358
+        },
+        {
+          "id": "CHEMBL2436704",
+          "observed": 5.02,
+          "predicted": 4.999142861652237
+        },
+        {
+          "id": "CHEMBL3901022",
+          "observed": 5.27,
+          "predicted": 5.9357349596584
+        },
+        {
+          "id": "CHEMBL5208951",
+          "observed": 4.57,
+          "predicted": 5.629112504682817
+        },
+        {
+          "id": "CHEMBL5646721",
+          "observed": 6.11,
+          "predicted": 5.937079618992122
+        },
+        {
+          "id": "CHEMBL220745",
+          "observed": 5.31,
+          "predicted": 4.824776709054833
+        },
+        {
+          "id": "CHEMBL1208903",
+          "observed": 5.0,
+          "predicted": 4.806852973935787
+        },
+        {
+          "id": "CHEMBL378188",
+          "observed": 5.33,
+          "predicted": 4.721284163059162
+        },
+        {
+          "id": "CHEMBL374055",
+          "observed": 4.7,
+          "predicted": 4.809636596996752
+        },
+        {
+          "id": "CHEMBL3330753",
+          "observed": 6.26,
+          "predicted": 5.252020967487374
+        },
+        {
+          "id": "CHEMBL2408098",
+          "observed": 4.84,
+          "predicted": 5.153941094409062
+        },
+        {
+          "id": "CHEMBL2408101",
+          "observed": 5.5,
+          "predicted": 5.029789881385975
+        },
+        {
+          "id": "CHEMBL4226059",
+          "observed": 4.72,
+          "predicted": 4.989908055919775
+        },
+        {
+          "id": "CHEMBL245476",
+          "observed": 4.7,
+          "predicted": 4.939273038419915
+        },
+        {
+          "id": "CHEMBL2059391",
+          "observed": 5.8,
+          "predicted": 5.070845977633476
+        },
+        {
+          "id": "CHEMBL2402162",
+          "observed": 4.91,
+          "predicted": 5.36003465831044
+        },
+        {
+          "id": "CHEMBL248337",
+          "observed": 5.96,
+          "predicted": 5.143763760371575
+        },
+        {
+          "id": "CHEMBL394713",
+          "observed": 6.05,
+          "predicted": 5.556464647331836
+        },
+        {
+          "id": "CHEMBL248132",
+          "observed": 6.52,
+          "predicted": 4.973135039006135
+        },
+        {
+          "id": "CHEMBL392878",
+          "observed": 6.22,
+          "predicted": 5.228824244418776
+        },
+        {
+          "id": "CHEMBL5419566",
+          "observed": 4.365,
+          "predicted": 4.807874325847764
+        },
+        {
+          "id": "CHEMBL4856483",
+          "observed": 4.72,
+          "predicted": 4.864817588921495
+        },
+        {
+          "id": "CHEMBL4863966",
+          "observed": 5.32,
+          "predicted": 5.041404627837442
+        },
+        {
+          "id": "CHEMBL389400",
+          "observed": 4.5,
+          "predicted": 5.490379646828865
+        },
+        {
+          "id": "CHEMBL3087677",
+          "observed": 5.21,
+          "predicted": 5.599673186102096
+        },
+        {
+          "id": "CHEMBL1084946",
+          "observed": 7.48,
+          "predicted": 6.303532438134779
+        },
+        {
+          "id": "CHEMBL2381401",
+          "observed": 4.44,
+          "predicted": 4.936017968229689
+        },
+        {
+          "id": "CHEMBL4286002",
+          "observed": 5.1,
+          "predicted": 4.976867742153681
+        },
+        {
+          "id": "CHEMBL4111654",
+          "observed": 7.09,
+          "predicted": 7.0093450388153515
+        },
+        {
+          "id": "CHEMBL3261068",
+          "observed": 7.01,
+          "predicted": 7.676341608044732
+        },
+        {
+          "id": "CHEMBL4114267",
+          "observed": 8.15,
+          "predicted": 7.3428760963862505
+        },
+        {
+          "id": "CHEMBL6046308",
+          "observed": 5.3,
+          "predicted": 5.889184741387086
+        },
+        {
+          "id": "CHEMBL5889291",
+          "observed": 6.28,
+          "predicted": 5.993244097222224
+        },
+        {
+          "id": "CHEMBL5852165",
+          "observed": 6.82,
+          "predicted": 5.907215699404763
+        },
+        {
+          "id": "CHEMBL4161947",
+          "observed": 4.74,
+          "predicted": 5.227888328598484
+        },
+        {
+          "id": "CHEMBL4173299",
+          "observed": 4.79,
+          "predicted": 5.1448582341269855
+        },
+        {
+          "id": "CHEMBL5274654",
+          "observed": 6.75,
+          "predicted": 5.436620751037156
+        },
+        {
+          "id": "CHEMBL4878996",
+          "observed": 5.34,
+          "predicted": 5.295185520382398
+        },
+        {
+          "id": "CHEMBL4169871",
+          "observed": 4.6,
+          "predicted": 5.133860590277779
+        },
+        {
+          "id": "CHEMBL5190530",
+          "observed": 5.53,
+          "predicted": 5.1156594318263435
+        },
+        {
+          "id": "CHEMBL4228027",
+          "observed": 4.76,
+          "predicted": 5.009057049200799
+        },
+        {
+          "id": "CHEMBL1458517",
+          "observed": 5.92,
+          "predicted": 4.982384364853898
+        },
+        {
+          "id": "CHEMBL4870117",
+          "observed": 5.15,
+          "predicted": 5.361323614493145
+        },
+        {
+          "id": "CHEMBL4859825",
+          "observed": 5.2,
+          "predicted": 5.350258526109307
+        },
+        {
+          "id": "CHEMBL4872910",
+          "observed": 5.27,
+          "predicted": 5.31772495828824
+        },
+        {
+          "id": "CHEMBL4167322",
+          "observed": 4.63,
+          "predicted": 5.030721368735433
+        },
+        {
+          "id": "CHEMBL4098927",
+          "observed": 4.52,
+          "predicted": 4.784282242063494
+        },
+        {
+          "id": "CHEMBL3330740",
+          "observed": 5.82,
+          "predicted": 5.4186577343663265
+        },
+        {
+          "id": "CHEMBL4226505",
+          "observed": 4.77,
+          "predicted": 4.9954521925990685
+        },
+        {
+          "id": "CHEMBL5827064",
+          "observed": 5.7,
+          "predicted": 6.040588382711041
+        },
+        {
+          "id": "CHEMBL429694",
+          "observed": 5.89,
+          "predicted": 5.687801957417584
+        },
+        {
+          "id": "CHEMBL95",
+          "observed": 7.91,
+          "predicted": 5.157598290945165
+        },
+        {
+          "id": "CHEMBL5639827",
+          "observed": 6.34,
+          "predicted": 5.870612057213622
+        },
+        {
+          "id": "CHEMBL4225226",
+          "observed": 4.65,
+          "predicted": 5.456276635777417
+        },
+        {
+          "id": "CHEMBL4227890",
+          "observed": 4.94,
+          "predicted": 4.903230587121214
+        },
+        {
+          "id": "CHEMBL4227615",
+          "observed": 5.3,
+          "predicted": 5.208912892316019
+        },
+        {
+          "id": "CHEMBL284616",
+          "observed": 4.03,
+          "predicted": 5.429055518353171
+        },
+        {
+          "id": "CHEMBL499997",
+          "observed": 6.52,
+          "predicted": 5.354116815476187
+        },
+        {
+          "id": "CHEMBL4228823",
+          "observed": 5.05,
+          "predicted": 4.941570148948275
+        },
+        {
+          "id": "CHEMBL4227357",
+          "observed": 5.13,
+          "predicted": 5.019705263486515
+        },
+        {
+          "id": "CHEMBL194823",
+          "observed": 4.35,
+          "predicted": 5.3777363571324495
+        },
+        {
+          "id": "CHEMBL94521",
+          "observed": 5.33,
+          "predicted": 5.460944756718975
+        },
+        {
+          "id": "CHEMBL3799641",
+          "observed": 7.41,
+          "predicted": 7.237475881583691
+        },
+        {
+          "id": "CHEMBL3692696",
+          "observed": 6.1,
+          "predicted": 5.14222185956405
+        },
+        {
+          "id": "CHEMBL5598305",
+          "observed": 4.75,
+          "predicted": 5.559907672709235
+        },
+        {
+          "id": "CHEMBL5598259",
+          "observed": 4.44,
+          "predicted": 5.2606481737012984
+        },
+        {
+          "id": "CHEMBL231647",
+          "observed": 6.05,
+          "predicted": 6.453364874708622
+        },
+        {
+          "id": "CHEMBL4761847",
+          "observed": 5.52,
+          "predicted": 5.3265691941738815
+        },
+        {
+          "id": "CHEMBL4864253",
+          "observed": 5.49,
+          "predicted": 5.430395979367856
+        },
+        {
+          "id": "CHEMBL4871713",
+          "observed": 5.64,
+          "predicted": 5.520743235930736
+        },
+        {
+          "id": "CHEMBL2179242",
+          "observed": 6.05,
+          "predicted": 5.004303894976552
+        },
+        {
+          "id": "CHEMBL145",
+          "observed": 4.645,
+          "predicted": 5.028477095734125
+        },
+        {
+          "id": "CHEMBL442801",
+          "observed": 8.46,
+          "predicted": 7.788740109812518
+        },
+        {
+          "id": "CHEMBL240055",
+          "observed": 9.52,
+          "predicted": 7.742537320761292
+        },
+        {
+          "id": "CHEMBL239629",
+          "observed": 8.62,
+          "predicted": 7.69713544633364
+        },
+        {
+          "id": "CHEMBL3818053",
+          "observed": 5.0,
+          "predicted": 5.0520598856872265
+        },
+        {
+          "id": "CHEMBL3629740",
+          "observed": 6.64,
+          "predicted": 7.685498706164083
+        },
+        {
+          "id": "CHEMBL3330739",
+          "observed": 5.15,
+          "predicted": 5.338702425699301
+        },
+        {
+          "id": "CHEMBL3961972",
+          "observed": 8.18,
+          "predicted": 8.384271759143637
+        },
+        {
+          "id": "CHEMBL3948649",
+          "observed": 8.35,
+          "predicted": 8.21129239770646
+        },
+        {
+          "id": "CHEMBL2179243",
+          "observed": 6.16,
+          "predicted": 4.946971345061186
+        },
+        {
+          "id": "CHEMBL410263",
+          "observed": 5.289999999999999,
+          "predicted": 4.977412596951661
+        },
+        {
+          "id": "CHEMBL3629742",
+          "observed": 7.58,
+          "predicted": 7.661591976686505
+        },
+        {
+          "id": "CHEMBL3629739",
+          "observed": 8.0,
+          "predicted": 7.511623152281745
+        },
+        {
+          "id": "CHEMBL3629741",
+          "observed": 7.24,
+          "predicted": 7.643421143353173
+        },
+        {
+          "id": "CHEMBL2402159",
+          "observed": 5.15,
+          "predicted": 4.922885027212369
+        },
+        {
+          "id": "CHEMBL63354",
+          "observed": 5.32,
+          "predicted": 4.693124865845958
+        },
+        {
+          "id": "CHEMBL2436710",
+          "observed": 4.85,
+          "predicted": 4.938601508214008
+        },
+        {
+          "id": "CHEMBL2436701",
+          "observed": 4.88,
+          "predicted": 4.869690775890774
+        },
+        {
+          "id": "CHEMBL2436703",
+          "observed": 5.19,
+          "predicted": 5.019189306006493
+        },
+        {
+          "id": "CHEMBL2436699",
+          "observed": 4.83,
+          "predicted": 4.892160585594961
+        },
+        {
+          "id": "CHEMBL4294830",
+          "observed": 4.75,
+          "predicted": 4.845804770923522
+        },
+        {
+          "id": "CHEMBL4287929",
+          "observed": 5.14,
+          "predicted": 4.83186820661977
+        },
+        {
+          "id": "CHEMBL4868743",
+          "observed": 5.65,
+          "predicted": 5.408387736742423
+        },
+        {
+          "id": "CHEMBL4852639",
+          "observed": 5.49,
+          "predicted": 5.395260148358586
+        },
+        {
+          "id": "CHEMBL4282190",
+          "observed": 4.75,
+          "predicted": 4.886593955176768
+        },
+        {
+          "id": "CHEMBL4284208",
+          "observed": 5.08,
+          "predicted": 4.821390596816377
+        },
+        {
+          "id": "CHEMBL5412904",
+          "observed": 5.085,
+          "predicted": 4.9014509762806675
+        },
+        {
+          "id": "CHEMBL5410783",
+          "observed": 4.5,
+          "predicted": 4.664979664953104
+        },
+        {
+          "id": "CHEMBL497",
+          "observed": 4.505,
+          "predicted": 4.764567967882813
+        },
+        {
+          "id": "CHEMBL2402158",
+          "observed": 5.1,
+          "predicted": 5.011617082917082
+        },
+        {
+          "id": "CHEMBL2402157",
+          "observed": 4.99,
+          "predicted": 4.927309260270979
+        },
+        {
+          "id": "CHEMBL2337293",
+          "observed": 5.43,
+          "predicted": 5.4667434873286425
+        },
+        {
+          "id": "CHEMBL2059388",
+          "observed": 5.8,
+          "predicted": 4.805762636235292
+        },
+        {
+          "id": "CHEMBL1788111",
+          "observed": 7.57,
+          "predicted": 6.686380388708516
+        },
+        {
+          "id": "CHEMBL4069995",
+          "observed": 4.62,
+          "predicted": 5.712733312954407
+        },
+        {
+          "id": "CHEMBL4226025",
+          "observed": 5.279999999999999,
+          "predicted": 5.26219673859127
+        },
+        {
+          "id": "CHEMBL4225563",
+          "observed": 5.14,
+          "predicted": 5.230605902777777
+        },
+        {
+          "id": "CHEMBL32823",
+          "observed": 5.08,
+          "predicted": 4.991836666024945
+        }
+      ],
+      "train_scaffolds": 396,
+      "test_scaffolds": 99
+    },
+    {
+      "symbol": "CTSB",
+      "target_id": "CHEMBL4072",
+      "endpoint": "pIC50",
+      "status": "validated",
+      "reason": "",
+      "raw_count": 821,
+      "source_total": 821,
+      "structure_count": 742,
+      "scaffold_count": 383,
+      "invalid_count": 1,
+      "discordant_structure_count": 4,
+      "retrieved_at": "2026-09-08T06:59:45.115496+00:00",
+      "data_sha256": "5d8cd577e0dfba0809a02d5afb639f55dd40df5fff1e5f2172732cfd2dd7bcf1",
+      "predictions": [
+        {
+          "identifier": "CHEMBL190121",
+          "name": "CHEMBL190121",
+          "input_smiles": "C[C@@H](CC1CCCCC1)OC(=O)NN(C)C#N",
+          "predicted": 6.415193979458041,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.5490196078431373,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL2028907",
+          "name": "CHEMBL2028907",
+          "input_smiles": "CC[C@H](C)[C@H](NC(=O)NNC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCCN=C(N)N)NC(=O)OCc1ccccc1)C(C)C)C(=O)N[C@H](C(=O)OC)C(C)C",
+          "predicted": 6.598587041701149,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.4946236559139785,
+          "domain": "outside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL2028909",
+          "name": "CHEMBL2028909",
+          "input_smiles": "CC(C)C[C@H](NC(=O)[C@H](CCCN=C(N)N)NC(=O)OCc1ccccc1)C(=O)N[C@H](C(=O)NNC(=O)N[C@H](C(=O)N[C@@H](C)C(N)=O)C(C)C)C(C)C",
+          "predicted": 6.624967531870704,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.4657534246575342,
+          "domain": "outside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL2028921",
+          "name": "CHEMBL2028921",
+          "input_smiles": "CC[C@H](C)[C@H](NC(=O)NNC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)OCc1ccccc1)C(=O)N[C@H](C(=O)OC)C(C)C",
+          "predicted": 6.774886820471193,
+          "observed": null,
+          "prediction_kind": "new_structure",
+          "similarity": 0.5113636363636364,
+          "domain": "inside",
+          "status": "available"
+        }
+      ],
+      "train_count": 613,
+      "test_count": 129,
+      "metrics": {
+        "mae": 0.48031876796374656,
+        "rmse": 0.6597436246465622,
+        "r2": 0.463371716095492,
+        "baseline_rmse": 0.9022188410853004
+      },
+      "quality_gate": {
+        "passed": true,
+        "max_rmse": 1.2,
+        "baseline_ratio": 0.9,
+        "min_r2": 0
+      },
+      "test_points": [
+        {
+          "id": "CHEMBL2070948",
+          "observed": 5.3,
+          "predicted": 5.421433155386282
+        },
+        {
+          "id": "CHEMBL1084402",
+          "observed": 5.19,
+          "predicted": 5.479894829649517
+        },
+        {
+          "id": "CHEMBL2070942",
+          "observed": 5.5,
+          "predicted": 5.554758261183265
+        },
+        {
+          "id": "CHEMBL1288526",
+          "observed": 7.19,
+          "predicted": 7.0869079263618335
+        },
+        {
+          "id": "CHEMBL1270269",
+          "observed": 5.6,
+          "predicted": 5.4884304971070605
+        },
+        {
+          "id": "CHEMBL470519",
+          "observed": 4.13,
+          "predicted": 5.129973390151517
+        },
+        {
+          "id": "CHEMBL452483",
+          "observed": 5.68,
+          "predicted": 5.0250328334859615
+        },
+        {
+          "id": "CHEMBL493039",
+          "observed": 7.96,
+          "predicted": 6.743438401529028
+        },
+        {
+          "id": "CHEMBL136252",
+          "observed": 7.52,
+          "predicted": 6.4679453012265515
+        },
+        {
+          "id": "CHEMBL126152",
+          "observed": 5.48,
+          "predicted": 5.693822558546065
+        },
+        {
+          "id": "CHEMBL122812",
+          "observed": 5.9,
+          "predicted": 5.917461239921877
+        },
+        {
+          "id": "CHEMBL451887",
+          "observed": 4.96,
+          "predicted": 6.517054785925879
+        },
+        {
+          "id": "CHEMBL3427166",
+          "observed": 5.85,
+          "predicted": 6.169508031985373
+        },
+        {
+          "id": "CHEMBL31545",
+          "observed": 7.23,
+          "predicted": 6.838689049665606
+        },
+        {
+          "id": "CHEMBL4228143",
+          "observed": 5.63,
+          "predicted": 5.819091989087302
+        },
+        {
+          "id": "CHEMBL377285",
+          "observed": 6.32,
+          "predicted": 5.575122854915337
+        },
+        {
+          "id": "CHEMBL207891",
+          "observed": 5.33,
+          "predicted": 5.631426316077552
+        },
+        {
+          "id": "CHEMBL1215628",
+          "observed": 6.01,
+          "predicted": 5.723741262470172
+        },
+        {
+          "id": "CHEMBL562462",
+          "observed": 5.3,
+          "predicted": 5.446180005411256
+        },
+        {
+          "id": "CHEMBL180839",
+          "observed": 6.51,
+          "predicted": 5.986341305916307
+        },
+        {
+          "id": "CHEMBL183812",
+          "observed": 8.62,
+          "predicted": 5.9932488546176055
+        },
+        {
+          "id": "CHEMBL3359789",
+          "observed": 6.38,
+          "predicted": 6.45534236284549
+        },
+        {
+          "id": "CHEMBL3359783",
+          "observed": 6.64,
+          "predicted": 6.361408488906927
+        },
+        {
+          "id": "CHEMBL1289644",
+          "observed": 4.82,
+          "predicted": 5.671374738889582
+        },
+        {
+          "id": "CHEMBL342189",
+          "observed": 6.28,
+          "predicted": 6.282915162788602
+        },
+        {
+          "id": "CHEMBL4784441",
+          "observed": 7.220000000000001,
+          "predicted": 6.5587547658071115
+        },
+        {
+          "id": "CHEMBL4762161",
+          "observed": 7.305,
+          "predicted": 6.5767904733287565
+        },
+        {
+          "id": "CHEMBL3357668",
+          "observed": 4.47,
+          "predicted": 4.551630370670995
+        },
+        {
+          "id": "CHEMBL3357670",
+          "observed": 4.55,
+          "predicted": 4.620435227272725
+        },
+        {
+          "id": "CHEMBL3357672",
+          "observed": 4.19,
+          "predicted": 4.62362477791306
+        },
+        {
+          "id": "CHEMBL379315",
+          "observed": 4.65,
+          "predicted": 5.498295009677824
+        },
+        {
+          "id": "CHEMBL2172006",
+          "observed": 6.33,
+          "predicted": 5.740382577925549
+        },
+        {
+          "id": "CHEMBL1790992",
+          "observed": 6.24,
+          "predicted": 6.624815679112556
+        },
+        {
+          "id": "CHEMBL1790997",
+          "observed": 6.57,
+          "predicted": 6.576948604347043
+        },
+        {
+          "id": "CHEMBL1790991",
+          "observed": 6.66,
+          "predicted": 6.465386327561331
+        },
+        {
+          "id": "CHEMBL1791001",
+          "observed": 6.34,
+          "predicted": 6.324665196608948
+        },
+        {
+          "id": "CHEMBL207670",
+          "observed": 4.64,
+          "predicted": 5.067181132756133
+        },
+        {
+          "id": "CHEMBL446443",
+          "observed": 4.39,
+          "predicted": 4.894139242528306
+        },
+        {
+          "id": "CHEMBL1790993",
+          "observed": 5.82,
+          "predicted": 6.475422032828282
+        },
+        {
+          "id": "CHEMBL1084401",
+          "observed": 5.63,
+          "predicted": 5.616498022463649
+        },
+        {
+          "id": "CHEMBL3649362",
+          "observed": 4.96,
+          "predicted": 6.108856336262418
+        },
+        {
+          "id": "CHEMBL3649363",
+          "observed": 4.64,
+          "predicted": 6.1524717888653715
+        },
+        {
+          "id": "CHEMBL3649416",
+          "observed": 7.0,
+          "predicted": 6.812410566754153
+        },
+        {
+          "id": "CHEMBL3649364",
+          "observed": 5.5,
+          "predicted": 5.9127143656690535
+        },
+        {
+          "id": "CHEMBL3649411",
+          "observed": 7.16,
+          "predicted": 6.944707322620191
+        },
+        {
+          "id": "CHEMBL1289645",
+          "observed": 5.49,
+          "predicted": 5.618238953667857
+        },
+        {
+          "id": "CHEMBL394270",
+          "observed": 6.8,
+          "predicted": 6.736447715999279
+        },
+        {
+          "id": "CHEMBL231862",
+          "observed": 6.73,
+          "predicted": 6.498394503673412
+        },
+        {
+          "id": "CHEMBL3649417",
+          "observed": 7.03,
+          "predicted": 6.923830353153788
+        },
+        {
+          "id": "CHEMBL141793",
+          "observed": 7.45,
+          "predicted": 7.888032121524307
+        },
+        {
+          "id": "CHEMBL117658",
+          "observed": 6.09,
+          "predicted": 5.486663899121714
+        },
+        {
+          "id": "CHEMBL194068",
+          "observed": 5.85,
+          "predicted": 5.236209137390389
+        },
+        {
+          "id": "CHEMBL3649420",
+          "observed": 6.45,
+          "predicted": 6.630212279208737
+        },
+        {
+          "id": "CHEMBL3649421",
+          "observed": 6.76,
+          "predicted": 6.702065151683489
+        },
+        {
+          "id": "CHEMBL409950",
+          "observed": 6.42,
+          "predicted": 6.615685285894662
+        },
+        {
+          "id": "CHEMBL266567",
+          "observed": 6.32,
+          "predicted": 6.378008789951366
+        },
+        {
+          "id": "CHEMBL266531",
+          "observed": 6.11,
+          "predicted": 6.352030582915348
+        },
+        {
+          "id": "CHEMBL262103",
+          "observed": 7.1,
+          "predicted": 5.652269819937012
+        },
+        {
+          "id": "CHEMBL4533469",
+          "observed": 8.64,
+          "predicted": 5.709057960095463
+        },
+        {
+          "id": "CHEMBL4245127",
+          "observed": 7.3,
+          "predicted": 6.812974055284992
+        },
+        {
+          "id": "CHEMBL563886",
+          "observed": 5.1,
+          "predicted": 5.225515440115443
+        },
+        {
+          "id": "CHEMBL2070940",
+          "observed": 5.5,
+          "predicted": 5.405110125985127
+        },
+        {
+          "id": "CHEMBL3354495",
+          "observed": 4.09,
+          "predicted": 5.424388654227717
+        },
+        {
+          "id": "CHEMBL3093827",
+          "observed": 5.19,
+          "predicted": 5.19303599256646
+        },
+        {
+          "id": "CHEMBL126210",
+          "observed": 5.46,
+          "predicted": 5.731042000682122
+        },
+        {
+          "id": "CHEMBL426819",
+          "observed": 5.98,
+          "predicted": 5.418153572729352
+        },
+        {
+          "id": "CHEMBL567893",
+          "observed": 5.0,
+          "predicted": 5.9929159527257845
+        },
+        {
+          "id": "CHEMBL132595",
+          "observed": 7.19,
+          "predicted": 6.142954919733045
+        },
+        {
+          "id": "CHEMBL3354494",
+          "observed": 5.09,
+          "predicted": 5.410509544795483
+        },
+        {
+          "id": "CHEMBL4228343",
+          "observed": 5.39,
+          "predicted": 5.796265388257576
+        },
+        {
+          "id": "CHEMBL2171986",
+          "observed": 6.4,
+          "predicted": 5.610159325049951
+        },
+        {
+          "id": "CHEMBL2171988",
+          "observed": 5.9,
+          "predicted": 5.560325212721307
+        },
+        {
+          "id": "CHEMBL5190213",
+          "observed": 5.54,
+          "predicted": 6.066181429334554
+        },
+        {
+          "id": "CHEMBL6189727",
+          "observed": 5.94,
+          "predicted": 6.157895941558441
+        },
+        {
+          "id": "CHEMBL6189170",
+          "observed": 5.73,
+          "predicted": 6.214670654085497
+        },
+        {
+          "id": "CHEMBL6189739",
+          "observed": 5.75,
+          "predicted": 6.16923025325369
+        },
+        {
+          "id": "CHEMBL6188341",
+          "observed": 5.82,
+          "predicted": 6.152983042478353
+        },
+        {
+          "id": "CHEMBL6189919",
+          "observed": 5.46,
+          "predicted": 6.14162314664502
+        },
+        {
+          "id": "CHEMBL6190904",
+          "observed": 6.65,
+          "predicted": 6.304244928075392
+        },
+        {
+          "id": "CHEMBL2171990",
+          "observed": 5.93,
+          "predicted": 5.511793585581083
+        },
+        {
+          "id": "CHEMBL2070947",
+          "observed": 5.1,
+          "predicted": 5.321836487817735
+        },
+        {
+          "id": "CHEMBL213158",
+          "observed": 4.2,
+          "predicted": 5.046544315233379
+        },
+        {
+          "id": "CHEMBL561586",
+          "observed": 5.7,
+          "predicted": 5.353233304022366
+        },
+        {
+          "id": "CHEMBL2171985",
+          "observed": 6.24,
+          "predicted": 5.585804126255687
+        },
+        {
+          "id": "CHEMBL565079",
+          "observed": 5.4,
+          "predicted": 6.0249956649253535
+        },
+        {
+          "id": "CHEMBL133728",
+          "observed": 8.31,
+          "predicted": 8.06141180226024
+        },
+        {
+          "id": "CHEMBL2070939",
+          "observed": 5.6,
+          "predicted": 5.420423568272005
+        },
+        {
+          "id": "CHEMBL382038",
+          "observed": 5.39,
+          "predicted": 5.429500603221329
+        },
+        {
+          "id": "CHEMBL2070944",
+          "observed": 5.3,
+          "predicted": 5.441513995032745
+        },
+        {
+          "id": "CHEMBL564131",
+          "observed": 5.2,
+          "predicted": 5.286718720689035
+        },
+        {
+          "id": "CHEMBL251327",
+          "observed": 6.0,
+          "predicted": 5.998100135811901
+        },
+        {
+          "id": "CHEMBL249712",
+          "observed": 6.54,
+          "predicted": 5.696888086749853
+        },
+        {
+          "id": "CHEMBL251101",
+          "observed": 5.39,
+          "predicted": 5.7724143028846155
+        },
+        {
+          "id": "CHEMBL250720",
+          "observed": 5.46,
+          "predicted": 5.638367440382334
+        },
+        {
+          "id": "CHEMBL251117",
+          "observed": 5.32,
+          "predicted": 6.000132628319395
+        },
+        {
+          "id": "CHEMBL443319",
+          "observed": 5.07,
+          "predicted": 5.788504766771223
+        },
+        {
+          "id": "CHEMBL251114",
+          "observed": 5.14,
+          "predicted": 5.873627255393709
+        },
+        {
+          "id": "CHEMBL251719",
+          "observed": 5.18,
+          "predicted": 5.671811172344816
+        },
+        {
+          "id": "CHEMBL4228861",
+          "observed": 5.56,
+          "predicted": 5.775583952245673
+        },
+        {
+          "id": "CHEMBL3093828",
+          "observed": 4.88,
+          "predicted": 5.576580511502388
+        },
+        {
+          "id": "CHEMBL3093926",
+          "observed": 4.42,
+          "predicted": 5.103705483232045
+        },
+        {
+          "id": "CHEMBL3093935",
+          "observed": 4.83,
+          "predicted": 4.77182223575036
+        },
+        {
+          "id": "CHEMBL2070945",
+          "observed": 5.3,
+          "predicted": 5.870770716262903
+        },
+        {
+          "id": "CHEMBL2070943",
+          "observed": 5.2,
+          "predicted": 5.6139316378066395
+        },
+        {
+          "id": "CHEMBL2071096",
+          "observed": 5.7,
+          "predicted": 5.343562180007492
+        },
+        {
+          "id": "CHEMBL2070937",
+          "observed": 5.8,
+          "predicted": 5.361920986652233
+        },
+        {
+          "id": "CHEMBL2070938",
+          "observed": 5.6,
+          "predicted": 5.366126666389168
+        },
+        {
+          "id": "CHEMBL3917415",
+          "observed": 5.05,
+          "predicted": 5.4759320674984755
+        },
+        {
+          "id": "CHEMBL200884",
+          "observed": 5.375,
+          "predicted": 5.876644111097236
+        },
+        {
+          "id": "CHEMBL550059",
+          "observed": 5.1,
+          "predicted": 5.212488218725719
+        },
+        {
+          "id": "CHEMBL140794",
+          "observed": 4.47,
+          "predicted": 5.4036460118874166
+        },
+        {
+          "id": "CHEMBL2171984",
+          "observed": 6.5,
+          "predicted": 5.604460921890609
+        },
+        {
+          "id": "CHEMBL2164676",
+          "observed": 6.34,
+          "predicted": 5.538697045402515
+        },
+        {
+          "id": "CHEMBL2164674",
+          "observed": 6.15,
+          "predicted": 5.22970956439394
+        },
+        {
+          "id": "CHEMBL8726",
+          "observed": 6.3,
+          "predicted": 5.697155868957436
+        },
+        {
+          "id": "CHEMBL8547",
+          "observed": 6.3,
+          "predicted": 5.616763987921802
+        },
+        {
+          "id": "CHEMBL274616",
+          "observed": 5.96,
+          "predicted": 5.9643192663239555
+        },
+        {
+          "id": "CHEMBL1672423",
+          "observed": 5.4,
+          "predicted": 5.992677271599932
+        },
+        {
+          "id": "CHEMBL440590",
+          "observed": 5.38,
+          "predicted": 5.882510840548342
+        },
+        {
+          "id": "CHEMBL2070946",
+          "observed": 5.4,
+          "predicted": 5.399310962475026
+        },
+        {
+          "id": "CHEMBL252360",
+          "observed": 4.63,
+          "predicted": 5.146718580984986
+        },
+        {
+          "id": "CHEMBL6191942",
+          "observed": 6.54,
+          "predicted": 6.166659539072036
+        },
+        {
+          "id": "CHEMBL323638",
+          "observed": 6.41,
+          "predicted": 6.021473385642136
+        },
+        {
+          "id": "CHEMBL116041",
+          "observed": 6.0,
+          "predicted": 6.0008607988365785
+        },
+        {
+          "id": "CHEMBL323637",
+          "observed": 5.84,
+          "predicted": 5.9662780133928575
+        },
+        {
+          "id": "CHEMBL326342",
+          "observed": 4.79,
+          "predicted": 5.944530066201161
+        },
+        {
+          "id": "CHEMBL390643",
+          "observed": 6.29,
+          "predicted": 6.5549401312229465
+        },
+        {
+          "id": "CHEMBL2179952",
+          "observed": 5.7,
+          "predicted": 6.1297276007846335
+        },
+        {
+          "id": "CHEMBL5639226",
+          "observed": 5.87,
+          "predicted": 4.947847752074315
+        }
+      ],
+      "train_scaffolds": 306,
+      "test_scaffolds": 77
+    },
+    {
+      "symbol": "PTK2B",
+      "target_id": "CHEMBL5469",
+      "endpoint": "pIC50",
+      "status": "validated",
+      "reason": "",
+      "raw_count": 301,
+      "source_total": 301,
+      "structure_count": 263,
+      "scaffold_count": 197,
+      "invalid_count": 0,
+      "discordant_structure_count": 1,
+      "retrieved_at": "2026-09-08T06:59:51.053842+00:00",
+      "data_sha256": "052dda4525f4caab6b43534beb5d23ec4370d41d88b1fb8d9844680518664604",
+      "predictions": [
+        {
+          "identifier": "CHEMBL3949755",
+          "name": "CHEMBL3949755",
+          "input_smiles": "CS(=O)(=O)N1CCCc2cccc(c2)Nc2ncc(C(F)(F)F)c(n2)NCc2cccnc21",
+          "predicted": 8.329820007076256,
+          "observed": 9.17,
+          "prediction_kind": "scaffold_holdout",
+          "similarity": 0.7236842105263158,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL3956954",
+          "name": "CHEMBL3956954",
+          "input_smiles": "CS(=O)(=O)N1CCCCC(=O)N2CCc3cc(ccc32)Nc2ncc(C(F)(F)F)c(n2)NCc2ccccc21",
+          "predicted": 7.998850183757211,
+          "observed": 9.05,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.8026315789473685,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL3958414",
+          "name": "CHEMBL3958414",
+          "input_smiles": "CS(=O)(=O)N1C/C=C/c2cc(ccc2N2CCOCC2)Nc2ncc(C(F)(F)F)c(n2)NCc2cccnc21",
+          "predicted": 8.501603084415589,
+          "observed": 9.08,
+          "prediction_kind": "scaffold_cv",
+          "similarity": 0.7530864197530864,
+          "domain": "inside",
+          "status": "available"
+        },
+        {
+          "identifier": "CHEMBL4862042",
+          "name": "CHEMBL4862042",
+          "input_smiles": "CNC(=O)c1ccc(Nc2ncc(C(F)(F)F)c(NCc3cccnc3N(C)S(C)(=O)=O)n2)cc1",
+          "predicted": 7.32573851573773,
+          "observed": 9.22,
+          "prediction_kind": "scaffold_holdout",
+          "similarity": 0.6714285714285714,
+          "domain": "inside",
+          "status": "available"
+        }
+      ],
+      "train_count": 209,
+      "test_count": 54,
+      "metrics": {
+        "mae": 0.47140077089994614,
+        "rmse": 0.6229115048321469,
+        "r2": 0.7106889861332579,
+        "baseline_rmse": 1.1997816159309689
+      },
+      "quality_gate": {
+        "passed": true,
+        "max_rmse": 1.2,
+        "baseline_ratio": 0.9,
+        "min_r2": 0
+      },
+      "test_points": [
+        {
+          "id": "CHEMBL3892377",
+          "observed": 6.91,
+          "predicted": 7.359648622384556
+        },
+        {
+          "id": "CHEMBL1469742",
+          "observed": 5.61,
+          "predicted": 6.146267640692641
+        },
+        {
+          "id": "CHEMBL1345665",
+          "observed": 4.38,
+          "predicted": 5.765973834325394
+        },
+        {
+          "id": "CHEMBL1996902",
+          "observed": 5.13,
+          "predicted": 5.154264632936507
+        },
+        {
+          "id": "CHEMBL1503392",
+          "observed": 4.32,
+          "predicted": 6.130397578463203
+        },
+        {
+          "id": "CHEMBL1576310",
+          "observed": 5.23,
+          "predicted": 5.296399355158728
+        },
+        {
+          "id": "CHEMBL3936048",
+          "observed": 6.59,
+          "predicted": 7.518574812860746
+        },
+        {
+          "id": "CHEMBL1596723",
+          "observed": 4.6,
+          "predicted": 5.242129434974747
+        },
+        {
+          "id": "CHEMBL487227",
+          "observed": 7.28,
+          "predicted": 7.264282528409095
+        },
+        {
+          "id": "CHEMBL422471",
+          "observed": 5.19,
+          "predicted": 5.196113538891665
+        },
+        {
+          "id": "CHEMBL3927099",
+          "observed": 6.7,
+          "predicted": 6.880975196158007
+        },
+        {
+          "id": "CHEMBL1738757",
+          "observed": 6.75,
+          "predicted": 6.546457208243146
+        },
+        {
+          "id": "CHEMBL4862042",
+          "observed": 9.22,
+          "predicted": 7.32573851573773
+        },
+        {
+          "id": "CHEMBL4874046",
+          "observed": 7.61,
+          "predicted": 6.7217018454635635
+        },
+        {
+          "id": "CHEMBL6143995",
+          "observed": 7.36,
+          "predicted": 7.014083212013681
+        },
+        {
+          "id": "CHEMBL6151317",
+          "observed": 7.35,
+          "predicted": 6.791430935470781
+        },
+        {
+          "id": "CHEMBL6150875",
+          "observed": 6.93,
+          "predicted": 6.808362511707044
+        },
+        {
+          "id": "CHEMBL570706",
+          "observed": 6.77,
+          "predicted": 6.580371099386727
+        },
+        {
+          "id": "CHEMBL2005690",
+          "observed": 5.17,
+          "predicted": 5.143727169011542
+        },
+        {
+          "id": "CHEMBL6165880",
+          "observed": 7.47,
+          "predicted": 7.289143948412699
+        },
+        {
+          "id": "CHEMBL1235786",
+          "observed": 6.55,
+          "predicted": 6.211215944038601
+        },
+        {
+          "id": "CHEMBL3197990",
+          "observed": 5.5,
+          "predicted": 5.217409291576475
+        },
+        {
+          "id": "CHEMBL288441",
+          "observed": 6.87,
+          "predicted": 6.251401585046897
+        },
+        {
+          "id": "CHEMBL3134612",
+          "observed": 4.99,
+          "predicted": 5.40896937229437
+        },
+        {
+          "id": "CHEMBL1468746",
+          "observed": 5.72,
+          "predicted": 5.302448798076922
+        },
+        {
+          "id": "CHEMBL2207433",
+          "observed": 6.44,
+          "predicted": 6.778614399576121
+        },
+        {
+          "id": "CHEMBL2207432",
+          "observed": 5.42,
+          "predicted": 6.451031184614
+        },
+        {
+          "id": "CHEMBL1388603",
+          "observed": 5.8,
+          "predicted": 5.457375500367686
+        },
+        {
+          "id": "CHEMBL1323696",
+          "observed": 5.88,
+          "predicted": 5.741217034181096
+        },
+        {
+          "id": "CHEMBL1327038",
+          "observed": 5.46,
+          "predicted": 6.1728513144841255
+        },
+        {
+          "id": "CHEMBL1392806",
+          "observed": 5.84,
+          "predicted": 5.220732339882343
+        },
+        {
+          "id": "CHEMBL3196959",
+          "observed": 5.26,
+          "predicted": 5.24630612148268
+        },
+        {
+          "id": "CHEMBL3189853",
+          "observed": 5.42,
+          "predicted": 5.208252743957426
+        },
+        {
+          "id": "CHEMBL1531090",
+          "observed": 4.92,
+          "predicted": 5.36119141344766
+        },
+        {
+          "id": "CHEMBL1986591",
+          "observed": 5.59,
+          "predicted": 5.166551948051948
+        },
+        {
+          "id": "CHEMBL3949755",
+          "observed": 9.17,
+          "predicted": 8.329820007076256
+        },
+        {
+          "id": "CHEMBL1307211",
+          "observed": 4.25,
+          "predicted": 5.2733219223484875
+        },
+        {
+          "id": "CHEMBL578585",
+          "observed": 5.18,
+          "predicted": 5.476569332577145
+        },
+        {
+          "id": "CHEMBL1372905",
+          "observed": 4.52,
+          "predicted": 5.269641318924131
+        },
+        {
+          "id": "CHEMBL2207441",
+          "observed": 7.9,
+          "predicted": 6.960671517631671
+        },
+        {
+          "id": "CHEMBL2207428",
+          "observed": 7.24,
+          "predicted": 6.6992008703102455
+        },
+        {
+          "id": "CHEMBL1507343",
+          "observed": 5.01,
+          "predicted": 5.230034983766232
+        },
+        {
+          "id": "CHEMBL1345770",
+          "observed": 5.81,
+          "predicted": 5.278436773816461
+        },
+        {
+          "id": "CHEMBL3198948",
+          "observed": 5.04,
+          "predicted": 5.257223313492062
+        },
+        {
+          "id": "CHEMBL3196625",
+          "observed": 4.68,
+          "predicted": 5.190099975198412
+        },
+        {
+          "id": "CHEMBL471526",
+          "observed": 6.22,
+          "predicted": 6.415229660443723
+        },
+        {
+          "id": "CHEMBL1498705",
+          "observed": 4.88,
+          "predicted": 5.283532780934343
+        },
+        {
+          "id": "CHEMBL1502065",
+          "observed": 5.19,
+          "predicted": 5.198731074134196
+        },
+        {
+          "id": "CHEMBL1536594",
+          "observed": 5.35,
+          "predicted": 5.232141177398985
+        },
+        {
+          "id": "CHEMBL529889",
+          "observed": 7.77,
+          "predicted": 7.289681236471859
+        },
+        {
+          "id": "CHEMBL261692",
+          "observed": 5.06,
+          "predicted": 5.821592152552304
+        },
+        {
+          "id": "CHEMBL1403448",
+          "observed": 5.21,
+          "predicted": 5.483282490079365
+        },
+        {
+          "id": "CHEMBL1498729",
+          "observed": 5.58,
+          "predicted": 5.345175649177209
+        },
+        {
+          "id": "CHEMBL3197885",
+          "observed": 5.2,
+          "predicted": 5.506317805284994
+        }
+      ],
+      "train_scaffolds": 157,
+      "test_scaffolds": 40
+    },
+    {
+      "symbol": "EPHA1",
+      "target_id": "CHEMBL5810",
+      "endpoint": "pIC50",
+      "status": "insufficient",
+      "reason": "有效结构或骨架数量不足",
+      "raw_count": 33,
+      "source_total": 33,
+      "structure_count": 29,
+      "scaffold_count": 26,
+      "invalid_count": 0,
+      "discordant_structure_count": 0,
+      "retrieved_at": "2026-09-08T06:59:55.112201+00:00",
+      "data_sha256": "464ccfff14608744771ec4ffd3d50a443a85f274c4e5dbc664e0138ef1865c56",
+      "predictions": []
+    }
+  ]
+}

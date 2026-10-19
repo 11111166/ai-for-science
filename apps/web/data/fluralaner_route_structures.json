@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "patent": "WO2023012821A1",
+  "patent_source_sha256": "525f75fffee7c881214f11445e9edb4e38c95dbb1f012e8bb770760dcb628173",
+  "generated_from_sources_at": "2026-09-17",
+  "nodes": [
+    {"id": "start", "label": "起始原料", "name": "1-氟-2-甲苯", "formula": "C7H7F", "smiles": "CC1=CC=CC=C1F", "source": "PubChem CID 7241", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7241", "patent_locator": "p0215"},
+    {"id": "step1", "label": "步骤 1 · 酰化", "name": "芳基酮", "formula": "C9H9FO", "smiles": "CC1=C(C=CC(=C1)C(=O)C)F", "source": "PubChem CID 289328", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/289328", "patent_locator": "p0215"},
+    {"id": "step2", "label": "步骤 2 · 氰化", "name": "芳基腈", "formula": "C10H9NO", "smiles": "CC1=C(C=CC(=C1)C(=O)C)C#N", "source": "PubChem CID 44119440", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/44119440", "patent_locator": "p0219"},
+    {"id": "step3", "label": "步骤 3 · 水解", "name": "芳基羧酸", "formula": "C10H10O3", "smiles": "CC1=C(C=CC(=C1)C(=O)C)C(=O)O", "source": "PubChem CID 53435554", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/53435554", "patent_locator": "p0223"},
+    {"id": "step4", "label": "步骤 4 · 偶联", "name": "甘氨酸乙酯酰胺", "formula": "C14H17NO4", "smiles": "C(C)(=O)C1=CC(=C(C(=O)NCC(=O)OCC)C=C1)C", "source": "OPSIN 按专利产物名称转换", "source_url": "https://opsin.ch.cam.ac.uk/", "patent_locator": "p0227"},
+    {"id": "step5", "label": "步骤 5 · 缩合", "name": "三氟烯酮乙酯", "formula": "C22H18Cl2F3NO4", "smiles": "ClC=1C=C(C=C(C1)Cl)\\C(=C/C(=O)C1=CC(=C(C(=O)NCC(=O)OCC)C=C1)C)\\C(F)(F)F", "source": "OPSIN 按专利 (E)-产物名称转换", "source_url": "https://opsin.ch.cam.ac.uk/", "patent_locator": "p0231"},
+    {"id": "step6", "label": "步骤 6 · 环化/水解", "name": "异噁唑啉甘氨酸", "formula": "C20H15Cl2F3N2O4", "smiles": "CC1=C(C=CC(=C1)C2=NOC(C2)(C3=CC(=CC(=C3)Cl)Cl)C(F)(F)F)C(=O)NCC(=O)O", "source": "PubChem CID 23159805；对应实验所得酸", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/23159805", "patent_locator": "p0235"},
+    {"id": "step7", "label": "步骤 7 · 末端偶联", "name": "氟雷拉纳", "formula": "C22H17Cl2F6N3O3", "smiles": "CC1=C(C=CC(=C1)C2=NOC(C2)(C3=CC(=CC(=C3)Cl)Cl)C(F)(F)F)C(=O)NCC(=O)NCC(F)(F)F", "source": "PubChem CID 25144319", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/25144319", "patent_locator": "p0239"}
+  ],
+  "branch_reagent": {"id": "branch5", "label": "步骤 5 另投入", "name": "3,5-二氯三氟苯乙酮", "formula": "C8H3Cl2F3O", "smiles": "C1=C(C=C(C=C1Cl)Cl)C(=O)C(F)(F)F", "source": "PubChem CID 2758231", "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2758231", "patent_locator": "p0231"},
+  "notes": [
+    "步骤 4、5 为按专利化学名称转换的二维结构示意，并非专利原图；需人工核对原件中的连接位置与异构体。",
+    "步骤 6 标题仍写乙酯，但实验所得物与步骤 7 投入物写羧酸；图按所得羧酸绘制，原文差异待复核。",
+    "步骤 6、7 未据此指定立体异构体。"
+  ]
+}
