@@ -163,6 +163,13 @@ docs                     架构、制图规范与演示说明
 
 欢迎提交 Issue 和 Pull Request。开始之前请阅读 [`CONTRIBUTING.md`](CONTRIBUTING.md)。涉及安全问题时请不要公开提交，按 [`SECURITY.md`](SECURITY.md) 的方式联系维护者。
 
+## 联系方式
+
+- 单位：北京菁苗健康科技有限公司
+- 邮箱：nkchenzhongwei@163.com
+
+欢迎通过 GitHub Issue 反馈问题，或通过邮件联系维护者。
+
 ## 许可证
 
 [MIT](LICENSE)
