@@ -1,0 +1,21 @@
+{
+  "name": "ai-for-science",
+  "private": true,
+  "workspaces": ["apps/web", "packages/contracts"],
+  "overrides": {
+    "ketcher-react": {
+      "miew-react": "0.12.0"
+    },
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "scripts": {
+    "dev:web": "npm run dev --workspace=@drug-discovery/web",
+    "build:web": "npm run build --workspace=@drug-discovery/web",
+    "test:web": "npm run test --workspace=@drug-discovery/web"
+  },
+  "devDependencies": {
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  }
+}

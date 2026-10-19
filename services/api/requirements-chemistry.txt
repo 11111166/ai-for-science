@@ -1,0 +1,4 @@
+# Install into release/services/api/_chemdeps; do not replace the shared runtime.
+rdkit==2024.3.2
+numpy==1.26.4
+Pillow==10.4.0

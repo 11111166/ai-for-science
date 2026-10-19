@@ -1,0 +1,24 @@
+{
+  "snapshot_id": "compound-eval-v1-ra-chembl37-tdc2021",
+  "model_version": "chembl-rdkit-tdc-rf-v1",
+  "chembl": {
+    "api_base": "https://www.ebi.ac.uk/chembl/api/data",
+    "expected_release": "ChEMBL_37",
+    "maximum_targets": 100,
+    "maximum_activities_per_target": 2000,
+    "compounds_per_target": 12
+  },
+  "tdc": {
+    "archive_url": "https://dataverse.harvard.edu/api/access/datafile/4426004",
+    "archive_sha256": "bd0005246cb6f1672333c28ad202112a8bf071ab65d847848715030308faf1f1",
+    "benchmark_snapshot": "ADMET_Group Dataverse file 4426004 (official scaffold test split)",
+    "endpoints": [
+      {"id": "hia_hou", "label_zh": "人体肠道吸收", "task": "classification", "favorable": "high", "metric": "AUROC"},
+      {"id": "ames", "label_zh": "Ames 致突变风险", "task": "classification", "favorable": "low", "metric": "AUROC"},
+      {"id": "herg", "label_zh": "hERG 阻断风险", "task": "classification", "favorable": "low", "metric": "AUROC"},
+      {"id": "caco2_wang", "label_zh": "Caco-2 渗透性", "task": "regression", "favorable": "high", "metric": "MAE", "unit": "log cm/s"},
+      {"id": "solubility_aqsoldb", "label_zh": "水溶解度", "task": "regression", "favorable": "high", "metric": "MAE", "unit": "log mol/L"}
+    ]
+  }
+}
+

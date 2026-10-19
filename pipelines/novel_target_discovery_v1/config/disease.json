@@ -1,0 +1,25 @@
+{
+  "id": "MONDO_0008383",
+  "name": "rheumatoid arthritis",
+  "name_zh": "类风湿关节炎",
+  "gwas_catalog_efo_id": "MONDO_0008383",
+  "gwas_catalog_source_id": "gwas_catalog_ra",
+  "virtual_cell_snapshot_id": "virtual-cell-v1-ra-cxg2026-06-11",
+  "validation_signature": {
+    "reference": "Binvignat et al., JCI Insight 2024, DOI 10.1172/jci.insight.178499",
+    "genes": ["TNF", "JUN", "EGR1", "IFIT2", "MAFB", "G0S2", "HLA-DQB1", "HLA-DRB5", "TNFSF13B"]
+  },
+  "single_cell_quality_gates": {"minimum_donors_per_group": 10, "minimum_evaluated_cell_types": 5, "minimum_scored_genes": 50},
+  "single_cell": {
+    "dataset_id": "3b751975-34bb-409a-a9b7-98380f0450ea",
+    "source_id": "cellxgene_ra_pbmc",
+    "case_label": "rheumatoid arthritis",
+    "control_label": "normal",
+    "disease_column": "disease",
+    "donor_column": "donor_id",
+    "cell_type_column": "cell_type",
+    "primary_column": "is_primary_data",
+    "minimum_cells_per_donor_cell_type": 20,
+    "minimum_donors_per_group": 3
+  }
+}

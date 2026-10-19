@@ -1,0 +1,36 @@
+{
+  "name": "@drug-discovery/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "postbuild": "node scripts/copy-standalone-assets.mjs"
+  },
+  "dependencies": {
+    "@drug-discovery/contracts": "*",
+    "3dmol": "^2.5.5",
+    "ketcher-core": "^3.18.0",
+    "ketcher-react": "^3.18.0",
+    "ketcher-standalone": "^3.18.0",
+    "lucide-react": "^0.544.0",
+    "next": "16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.18.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "16.2.10",
+    "jsdom": "^29.1.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

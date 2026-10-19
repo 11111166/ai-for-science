@@ -1,0 +1,31 @@
+{
+  "disease_set_version": "target-discovery-enhanced-25-v2",
+  "diseases": [
+    {"id": "MONDO_0008383", "name": "rheumatoid arthritis", "name_zh": "类风湿关节炎", "area": "immunology", "tier": "complete", "aliases": ["RA"]},
+    {"id": "MONDO_0007915", "name": "systemic lupus erythematosus", "name_zh": "系统性红斑狼疮", "area": "immunology", "tier": "complete", "aliases": ["SLE", "lupus"]},
+    {"id": "MONDO_0005011", "name": "Crohn disease", "name_zh": "克罗恩病", "area": "immunology", "tier": "complete", "aliases": ["Crohn's disease"]},
+    {"id": "MONDO_0010679", "name": "Duchenne muscular dystrophy", "name_zh": "杜氏肌营养不良", "area": "rare", "tier": "enhanced", "aliases": ["DMD"]},
+    {"id": "MONDO_0005233", "name": "non-small cell lung carcinoma", "name_zh": "非小细胞肺癌", "area": "oncology", "tier": "complete", "aliases": ["NSCLC", "non-small-cell lung carcinoma"]},
+
+    {"id": "EFO_0000768", "name": "idiopathic pulmonary fibrosis", "name_zh": "特发性肺纤维化", "area": "fibrosis", "tier": "enhanced", "aliases": ["IPF"]},
+    {"id": "MONDO_0005083", "name": "psoriasis", "name_zh": "银屑病", "area": "immunology", "tier": "enhanced", "aliases": ["psoriasis vulgaris"]},
+    {"id": "MONDO_0005101", "name": "ulcerative colitis", "name_zh": "溃疡性结肠炎", "area": "immunology", "tier": "enhanced", "aliases": ["UC"]},
+    {"id": "MONDO_0004979", "name": "asthma", "name_zh": "哮喘", "area": "respiratory", "tier": "enhanced", "aliases": []},
+    {"id": "MONDO_0005148", "name": "type 2 diabetes mellitus", "name_zh": "2 型糖尿病", "area": "metabolic", "tier": "enhanced", "aliases": ["type 2 diabetes", "T2D"]},
+    {"id": "MONDO_0005300", "name": "chronic kidney disease", "name_zh": "慢性肾病", "area": "renal", "tier": "enhanced", "aliases": ["CKD"]},
+    {"id": "MONDO_0004975", "name": "Alzheimer disease", "name_zh": "阿尔茨海默病", "area": "neurology", "tier": "enhanced", "aliases": ["Alzheimer's disease", "AD"]},
+    {"id": "MONDO_0005180", "name": "Parkinson disease", "name_zh": "帕金森病", "area": "neurology", "tier": "enhanced", "aliases": ["Parkinson's disease", "PD"]},
+    {"id": "MONDO_0007254", "name": "breast cancer", "name_zh": "乳腺癌", "area": "oncology", "tier": "enhanced", "aliases": []},
+    {"id": "MONDO_0005002", "name": "chronic obstructive pulmonary disease", "name_zh": "慢性阻塞性肺疾病", "area": "respiratory", "tier": "complete", "aliases": ["COPD"]},
+    {"id": "MONDO_0005575", "name": "colorectal cancer", "name_zh": "结直肠癌", "area": "oncology", "tier": "enhanced", "aliases": ["CRC"]},
+    {"id": "MONDO_0007256", "name": "hepatocellular carcinoma", "name_zh": "肝细胞癌", "area": "oncology", "tier": "enhanced", "aliases": ["HCC"]},
+    {"id": "MONDO_0005105", "name": "melanoma", "name_zh": "黑色素瘤", "area": "oncology", "tier": "enhanced", "aliases": []},
+    {"id": "MONDO_0018874", "name": "acute myeloid leukemia", "name_zh": "急性髓系白血病", "area": "oncology", "tier": "enhanced", "aliases": ["AML"]},
+    {"id": "MONDO_0018177", "name": "glioblastoma", "name_zh": "胶质母细胞瘤", "area": "oncology", "tier": "enhanced", "aliases": ["GBM"]},
+    {"id": "MONDO_0009831", "name": "malignant pancreatic neoplasm", "name_zh": "胰腺癌", "area": "oncology", "tier": "enhanced", "aliases": ["pancreatic cancer"]},
+    {"id": "MONDO_0009061", "name": "cystic fibrosis", "name_zh": "囊性纤维化", "area": "rare", "tier": "enhanced", "aliases": ["CF"]},
+    {"id": "MONDO_0001516", "name": "spinal muscular atrophy", "name_zh": "脊髓性肌萎缩症", "area": "rare", "tier": "enhanced", "aliases": ["SMA"]},
+    {"id": "MONDO_0010526", "name": "Fabry disease", "name_zh": "法布里病", "area": "rare", "tier": "enhanced", "aliases": []},
+    {"id": "MONDO_0018150", "name": "Gaucher disease", "name_zh": "戈谢病", "area": "rare", "tier": "enhanced", "aliases": []}
+  ]
+}

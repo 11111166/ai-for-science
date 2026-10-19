@@ -1,0 +1,14 @@
+node_modules
+**/node_modules
+.next
+**/.next
+.venv
+**/__pycache__
+**/*.pyc
+data
+**/data
+_chemdeps
+*.db
+*.sqlite
+*.log
+.git

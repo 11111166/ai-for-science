@@ -1,0 +1,54 @@
+{
+  "registry_version": "perturbation-knockout-sources-v2",
+  "snapshot_id": "perturb-ko-v2-ra-depmap24q4",
+  "sources": [
+    {
+      "id": "depmap_crispr_gene_effect",
+      "name": "DepMap CRISPR Gene Effect",
+      "version": "24Q4",
+      "url": "https://ndownloader.figshare.com/files/51064667",
+      "filename": "CRISPRGeneEffect.csv",
+      "bytes": 428678699,
+      "md5": "6edf7ade09b9b34199210b559d4745d3",
+      "license": "CC BY 4.0",
+      "citation": "Broad DepMap, DepMap 24Q4 Public, DOI 10.25452/figshare.plus.27993248.v1",
+      "role": "Chronos-normalized CRISPR knockout gene effects across screened cell models"
+    },
+    {
+      "id": "depmap_model",
+      "name": "DepMap Model metadata",
+      "version": "24Q4",
+      "url": "https://ndownloader.figshare.com/files/51065297",
+      "filename": "Model.csv",
+      "bytes": 645696,
+      "md5": "675210d17675f3517b0ce39a3c274f16",
+      "license": "CC BY 4.0",
+      "citation": "Broad DepMap, DepMap 24Q4 Public, DOI 10.25452/figshare.plus.27993248.v1",
+      "role": "cell-model lineage and disease metadata"
+    },
+    {
+      "id": "depmap_common_essential",
+      "name": "DepMap common-essential controls",
+      "version": "24Q4",
+      "url": "https://ndownloader.figshare.com/files/51063560",
+      "filename": "AchillesCommonEssentialControls.csv",
+      "bytes": 17015,
+      "md5": "9cc07e7ebc282984d8107341dfde8f26",
+      "license": "CC BY 4.0",
+      "citation": "Broad DepMap, DepMap 24Q4 Public, DOI 10.25452/figshare.plus.27993248.v1",
+      "role": "positive controls for independent knockout benchmark"
+    },
+    {
+      "id": "depmap_nonessential",
+      "name": "DepMap nonessential controls",
+      "version": "24Q4",
+      "url": "https://ndownloader.figshare.com/files/51063566",
+      "filename": "AchillesNonessentialControls.csv",
+      "bytes": 11490,
+      "md5": "ca6a757db1cae49b913423ce73b818cf",
+      "license": "CC BY 4.0",
+      "citation": "Broad DepMap, DepMap 24Q4 Public, DOI 10.25452/figshare.plus.27993248.v1",
+      "role": "negative controls for independent knockout benchmark"
+    }
+  ]
+}

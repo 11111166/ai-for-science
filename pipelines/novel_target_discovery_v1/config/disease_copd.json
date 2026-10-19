@@ -1,0 +1,27 @@
+{
+  "id": "MONDO_0005002",
+  "name": "chronic obstructive pulmonary disease",
+  "name_zh": "慢性阻塞性肺疾病",
+  "gwas_catalog_efo_id": "MONDO_0005002",
+  "gwas_catalog_source_id": "gwas_catalog_copd",
+  "virtual_cell_snapshot_id": "virtual-cell-v1-copd-cxg2026-09-07",
+  "snapshot_id": "novel-td-v2-copd-ot26.06-gwas2026-09-07-cxg2026-09-07",
+  "single_cell_quality_gates": {"minimum_donors_per_group": 5, "minimum_evaluated_cell_types": 5, "minimum_scored_genes": 50},
+  "single_cell": {
+    "dataset_id": "6eedf808-fb04-4c0c-a788-26e63bc51d92", "source_id": "cellxgene_copd_lung",
+    "case_label": "chronic obstructive pulmonary disease", "control_label": "normal", "disease_column": "disease", "donor_column": "donor_id", "cell_type_column": "cell_type", "primary_column": "is_primary_data",
+    "minimum_cells_per_donor_cell_type": 20, "minimum_donors_per_group": 3
+  },
+  "source_overrides": [
+    {
+      "id": "gwas_catalog_copd", "name": "GWAS Catalog chronic obstructive pulmonary disease associations", "version": "retrieved-2026-09-07", "kind": "gwas_catalog_v2",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?efo_id=MONDO_0005002&size=100", "filename": "associations.jsonl",
+      "license": "EMBL-EBI terms; study-specific attribution applies", "license_url": "https://www.ebi.ac.uk/gwas/docs/about", "role": "independent curated GWAS associations and mapped genes"
+    },
+    {
+      "id": "cellxgene_copd_lung", "name": "COPD and healthy lung-parenchyma single-cell RNA-seq", "version": "retrieved-2026-09-07", "kind": "file",
+      "url": "https://datasets.cellxgene.cziscience.com/6eedf808-fb04-4c0c-a788-26e63bc51d92.h5ad", "filename": "copd-lung-6eedf808.h5ad",
+      "license": "Dataset-specific terms and CZ CELLxGENE Discover terms apply", "license_url": "https://cellxgene.cziscience.com/collections/dc4cd1f7-667a-4c29-ae77-9401b9700d7f", "citation": "CELLxGENE collection: Anomalous epithelial variations and ectopic inflammatory response in COPD", "role": "donor-aware disease versus healthy lung-parenchyma single-cell expression"
+    }
+  ]
+}

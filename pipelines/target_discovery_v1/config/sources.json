@@ -1,0 +1,89 @@
+{
+  "registry_version": "target-to-hit-sources-v2",
+  "snapshot_id": "td-v2-25d-ot26.06-hgnc2026-08-07-hpa25.1",
+  "created_for": "AI for Science Target-to-Hit v2",
+  "sources": [
+    {
+      "id": "open_targets_target",
+      "name": "Open Targets target",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/target/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "gene identity and target metadata"
+    },
+    {
+      "id": "open_targets_disease",
+      "name": "Open Targets disease",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/disease/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "disease ontology and canonical names"
+    },
+    {
+      "id": "open_targets_association_by_datatype_direct",
+      "name": "Open Targets direct disease-target associations by datatype",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/association_by_datatype_direct/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "causal and disease-context features plus held-out known-drug labels"
+    },
+    {
+      "id": "open_targets_target_prioritisation",
+      "name": "Open Targets target prioritisation",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/target_prioritisation/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "development feasibility and safety flags"
+    },
+    {
+      "id": "open_targets_clingen",
+      "name": "ClinGen via Open Targets harmonisation",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/evidence_clingen/",
+      "license": "CC0 1.0 upstream; harmonised by Open Targets",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "traceable curated gene-disease evidence lineage"
+    },
+    {
+      "id": "open_targets_panelapp",
+      "name": "Genomics England PanelApp via Open Targets harmonisation",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/evidence_genomics_england/",
+      "license": "Upstream PanelApp terms; harmonised by Open Targets",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "traceable expert-panel gene-disease evidence lineage"
+    },
+    {
+      "id": "hgnc",
+      "name": "HGNC complete approved set",
+      "version": "2026-08-07",
+      "kind": "file",
+      "url": "https://storage.googleapis.com/public-download-files/hgnc/archive/archive/monthly/tsv/hgnc_complete_set_2026-08-07.txt",
+      "filename": "hgnc_complete_set_2026-08-07.txt",
+      "license": "CC0",
+      "license_url": "https://hgnc.genenames.org/",
+      "role": "authoritative human gene identity"
+    },
+    {
+      "id": "human_protein_atlas",
+      "name": "Human Protein Atlas summary",
+      "version": "25.1",
+      "kind": "file",
+      "url": "https://www.proteinatlas.org/download/proteinatlas.tsv.zip",
+      "filename": "proteinatlas.tsv.zip",
+      "license": "CC BY 4.0 for copyrightable database content; third-party constraints may apply",
+      "license_url": "https://www.proteinatlas.org/about/licence",
+      "role": "protein evidence and expression selectivity context"
+    }
+  ]
+}

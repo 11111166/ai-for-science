@@ -1,0 +1,27 @@
+{
+  "id": "MONDO_0005301",
+  "name": "multiple sclerosis",
+  "name_zh": "多发性硬化",
+  "gwas_catalog_efo_id": "MONDO_0005301",
+  "gwas_catalog_source_id": "gwas_catalog_ms",
+  "virtual_cell_snapshot_id": "virtual-cell-v1-ms-cxg2026-09-07",
+  "snapshot_id": "novel-td-v2-ms-ot26.06-gwas2026-09-07-cxg2026-09-07",
+  "single_cell_quality_gates": {"minimum_donors_per_group": 3, "minimum_evaluated_cell_types": 3, "minimum_scored_genes": 1},
+  "single_cell": {
+    "dataset_id": "8bbea7c5-c742-4c27-a597-0f1e1383bb48", "source_id": "cellxgene_ms_brain",
+    "case_label": "multiple sclerosis", "control_label": "normal", "disease_column": "disease", "donor_column": "donor_id", "cell_type_column": "cell_type", "primary_column": "is_primary_data",
+    "minimum_cells_per_donor_cell_type": 20, "minimum_donors_per_group": 3
+  },
+  "source_overrides": [
+    {
+      "id": "gwas_catalog_ms", "name": "GWAS Catalog multiple sclerosis associations", "version": "retrieved-2026-09-07", "kind": "gwas_catalog_v2",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?efo_id=MONDO_0005301&size=100", "filename": "associations.jsonl",
+      "license": "EMBL-EBI terms; study-specific attribution applies", "license_url": "https://www.ebi.ac.uk/gwas/docs/about", "role": "independent curated GWAS associations and mapped genes"
+    },
+    {
+      "id": "cellxgene_ms_brain", "name": "Multiple-sclerosis brain single-cell RNA-seq", "version": "retrieved-2026-09-07", "kind": "file",
+      "url": "https://datasets.cellxgene.cziscience.com/8bbea7c5-c742-4c27-a597-0f1e1383bb48.h5ad", "filename": "ms-brain-8bbea7c5.h5ad",
+      "license": "Dataset-specific terms and CZ CELLxGENE Discover terms apply", "license_url": "https://cellxgene.cziscience.com/collections/16c1e722-96ae-4bf6-b408-cd7f8918484f", "citation": "CELLxGENE collection: Oligodendrocytes in multiple sclerosis", "role": "donor-aware disease versus healthy single-cell expression"
+    }
+  ]
+}

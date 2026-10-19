@@ -1,0 +1,28 @@
+{
+  "id": "MONDO_0005233",
+  "name": "non-small cell lung carcinoma",
+  "name_zh": "非小细胞肺癌",
+  "gwas_catalog_efo_id": "MONDO_0005233",
+  "gwas_catalog_source_id": "gwas_catalog_nsclc",
+  "virtual_cell_snapshot_id": "virtual-cell-v1-nsclc-cxg2026-09-07",
+  "snapshot_id": "novel-td-v2-nsclc-ot26.06-gwas2026-09-07-cxg2026-09-07",
+  "minimum_gwas_catalog_associations": 100,
+  "single_cell_quality_gates": {"minimum_donors_per_group": 5, "minimum_evaluated_cell_types": 5, "minimum_scored_genes": 50},
+  "single_cell": {
+    "dataset_id": "46e0287b-9a33-4e83-99f3-8c044131bfdc", "source_id": "cellxgene_nsclc_lung",
+    "case_label": "non-small cell lung carcinoma", "control_label": "normal", "disease_column": "disease", "donor_column": "donor_id", "cell_type_column": "cell_type", "primary_column": null,
+    "minimum_cells_per_donor_cell_type": 20, "minimum_donors_per_group": 3
+  },
+  "source_overrides": [
+    {
+      "id": "gwas_catalog_nsclc", "name": "GWAS Catalog non-small cell lung carcinoma associations", "version": "retrieved-2026-09-07", "kind": "gwas_catalog_v2",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?efo_id=MONDO_0005233&size=100", "filename": "associations.jsonl",
+      "license": "EMBL-EBI terms; study-specific attribution applies", "license_url": "https://www.ebi.ac.uk/gwas/docs/about", "role": "independent curated GWAS associations and mapped genes"
+    },
+    {
+      "id": "cellxgene_nsclc_lung", "name": "Single-cell lung cancer core atlas", "version": "retrieved-2026-09-07", "kind": "file",
+      "url": "https://datasets.cellxgene.cziscience.com/46e0287b-9a33-4e83-99f3-8c044131bfdc.h5ad", "filename": "nsclc-luca-46e0287b.h5ad",
+      "license": "Dataset-specific terms and CZ CELLxGENE Discover terms apply", "license_url": "https://cellxgene.cziscience.com/collections/edb893ee-4066-4128-9aec-5eb2b03f8287", "citation": "CELLxGENE collection: The single-cell lung cancer atlas (LuCA), core atlas", "role": "donor-aware disease versus healthy single-cell expression; integrated atlas is secondary data"
+    }
+  ]
+}

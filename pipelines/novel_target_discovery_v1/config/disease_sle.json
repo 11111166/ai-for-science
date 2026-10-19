@@ -1,0 +1,34 @@
+{
+  "id": "MONDO_0007915",
+  "name": "systemic lupus erythematosus",
+  "name_zh": "系统性红斑狼疮",
+  "gwas_catalog_efo_id": "MONDO_0007915",
+  "gwas_catalog_source_id": "gwas_catalog_sle",
+  "virtual_cell_snapshot_id": "virtual-cell-v1-sle-cxg2026-09-07",
+  "snapshot_id": "novel-td-v2-sle-ot26.06-gwas2026-09-07-cxg2026-09-07",
+  "single_cell_quality_gates": {"minimum_donors_per_group": 20, "minimum_evaluated_cell_types": 5, "minimum_scored_genes": 100},
+  "single_cell": {
+    "dataset_id": "c55dc602-d168-4d15-acc1-5de4f2f5d551",
+    "source_id": "cellxgene_sle_pbmc",
+    "case_label": "systemic lupus erythematosus",
+    "control_label": "normal",
+    "disease_column": "disease",
+    "donor_column": "donor_id",
+    "cell_type_column": "cell_type",
+    "primary_column": "is_primary_data",
+    "minimum_cells_per_donor_cell_type": 20,
+    "minimum_donors_per_group": 3
+  },
+  "source_overrides": [
+    {
+      "id": "gwas_catalog_sle", "name": "GWAS Catalog systemic lupus erythematosus associations", "version": "retrieved-2026-09-07", "kind": "gwas_catalog_v2",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?efo_id=MONDO_0007915&size=100", "filename": "associations.jsonl",
+      "license": "EMBL-EBI terms; study-specific attribution applies", "license_url": "https://www.ebi.ac.uk/gwas/docs/about", "role": "independent curated GWAS associations and mapped genes"
+    },
+    {
+      "id": "cellxgene_sle_pbmc", "name": "Adult lupus PBMC single-cell RNA-seq", "version": "retrieved-2026-09-07", "kind": "file",
+      "url": "https://datasets.cellxgene.cziscience.com/c55dc602-d168-4d15-acc1-5de4f2f5d551.h5ad", "filename": "sle-pbmc-c55dc602.h5ad",
+      "license": "Dataset-specific terms and CZ CELLxGENE Discover terms apply", "license_url": "https://cellxgene.cziscience.com/collections/436154da-bcf1-4130-9c8b-120ff9a888f2", "citation": "CELLxGENE collection: multiplexed scRNA-seq of 1.2 million PBMCs from adult lupus samples", "role": "donor-aware disease versus healthy single-cell expression"
+    }
+  ]
+}

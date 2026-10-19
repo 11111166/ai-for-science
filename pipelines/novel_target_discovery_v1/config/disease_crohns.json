@@ -1,0 +1,27 @@
+{
+  "id": "MONDO_0005011",
+  "name": "Crohn disease",
+  "name_zh": "克罗恩病",
+  "gwas_catalog_efo_id": "MONDO_0005011",
+  "gwas_catalog_source_id": "gwas_catalog_crohns",
+  "virtual_cell_snapshot_id": "virtual-cell-v1-crohns-cxg2026-09-07",
+  "snapshot_id": "novel-td-v2-crohns-ot26.06-gwas2026-09-07-cxg2026-09-07",
+  "single_cell_quality_gates": {"minimum_donors_per_group": 5, "minimum_evaluated_cell_types": 5, "minimum_scored_genes": 100},
+  "single_cell": {
+    "dataset_id": "5e75dd8f-5c5f-4056-ade2-117748429022", "source_id": "cellxgene_crohns_colon",
+    "case_label": "Crohn disease", "control_label": "normal", "disease_column": "disease", "donor_column": "donor_id", "cell_type_column": "cell_type", "primary_column": "is_primary_data",
+    "minimum_cells_per_donor_cell_type": 20, "minimum_donors_per_group": 3
+  },
+  "source_overrides": [
+    {
+      "id": "gwas_catalog_crohns", "name": "GWAS Catalog Crohn disease associations", "version": "retrieved-2026-09-07", "kind": "gwas_catalog_v2",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?efo_id=MONDO_0005011&size=100", "filename": "associations.jsonl",
+      "license": "EMBL-EBI terms; study-specific attribution applies", "license_url": "https://www.ebi.ac.uk/gwas/docs/about", "role": "independent curated GWAS associations and mapped genes"
+    },
+    {
+      "id": "cellxgene_crohns_colon", "name": "IBD and healthy colon mucosa single-cell RNA-seq", "version": "retrieved-2026-09-07", "kind": "file",
+      "url": "https://datasets.cellxgene.cziscience.com/5e75dd8f-5c5f-4056-ade2-117748429022.h5ad", "filename": "crohns-colon-5e75dd8f.h5ad",
+      "license": "Dataset-specific terms and CZ CELLxGENE Discover terms apply", "license_url": "https://cellxgene.cziscience.com/collections/7c7bd6c2-925b-4034-baab-620ef1b760e1", "citation": "CELLxGENE collection: IBD and healthy-control 10x single-cell transcriptomics", "role": "donor-aware disease versus healthy single-cell expression"
+    }
+  ]
+}

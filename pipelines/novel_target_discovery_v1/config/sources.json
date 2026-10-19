@@ -1,0 +1,109 @@
+{
+  "registry_version": "novel-target-discovery-sources-v2",
+  "snapshot_id": "novel-td-v2-ra-ot26.06-gwas2026-09-03-cxg2026-06-11",
+  "sources": [
+    {
+      "id": "open_targets_target",
+      "name": "Open Targets target",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/target/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "protein-coding candidate universe and gene identity"
+    },
+    {
+      "id": "open_targets_association_by_datatype_direct",
+      "name": "Open Targets direct associations by datatype",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/association_by_datatype_direct/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "prior association, literature and held-out known-drug labels"
+    },
+    {
+      "id": "open_targets_target_prioritisation",
+      "name": "Open Targets target prioritisation",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/target_prioritisation/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "tractability, safety and clinical-precedence annotations"
+    },
+    {
+      "id": "open_targets_gwas_credible_sets",
+      "name": "Open Targets fine-mapped GWAS evidence",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/evidence_gwas_credible_sets/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "fine-mapped GWAS-to-gene evidence"
+    },
+    {
+      "id": "open_targets_colocalisation",
+      "name": "Open Targets molecular-QTL colocalisation",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/colocalisation/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "GWAS and eQTL colocalisation probability"
+    },
+    {
+      "id": "open_targets_credible_set",
+      "name": "Open Targets credible sets",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/credible_set/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "link colocalised QTL loci to studies"
+    },
+    {
+      "id": "open_targets_study",
+      "name": "Open Targets GWAS and QTL study index",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/study/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "QTL gene and biosample identity"
+    },
+    {
+      "id": "open_targets_interaction",
+      "name": "Open Targets protein interaction network",
+      "version": "26.06",
+      "kind": "parquet_directory",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.06/output/interaction/",
+      "license": "Open Targets integrated data; upstream-specific licences apply",
+      "license_url": "https://platform-docs.opentargets.org/licence",
+      "role": "bounded human protein network propagation"
+    },
+    {
+      "id": "gwas_catalog_ra",
+      "name": "NHGRI-EBI GWAS Catalog rheumatoid arthritis associations",
+      "version": "retrieved-2026-09-03",
+      "kind": "gwas_catalog_v2",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/v2/associations?efo_id=MONDO_0008383&size=100",
+      "filename": "associations.jsonl",
+      "license": "EMBL-EBI terms; study-specific attribution applies",
+      "license_url": "https://www.ebi.ac.uk/gwas/docs/about",
+      "role": "independent curated GWAS associations and mapped genes"
+    },
+    {
+      "id": "cellxgene_ra_pbmc",
+      "name": "RA disease-activity PBMC single-cell RNA-seq",
+      "version": "dataset-revised-2026-06-11",
+      "kind": "file",
+      "url": "https://datasets.cellxgene.cziscience.com/3b751975-34bb-409a-a9b7-98380f0450ea.h5ad",
+      "filename": "ra-pbmc-3b751975.h5ad",
+      "license": "Dataset-specific terms and CZ CELLxGENE Discover terms apply",
+      "license_url": "https://cellxgene.cziscience.com/collections/e1a9ca56-f2ee-435d-980a-4f49ab7a952b",
+      "citation": "Binvignat et al., JCI Insight 2024, DOI 10.1172/jci.insight.178499",
+      "role": "donor-aware disease versus healthy single-cell expression"
+    }
+  ]
+}

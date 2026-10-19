@@ -1,0 +1,34 @@
+services:
+  api:
+    build:
+      context: ./services/api
+    environment:
+      APP_ENV: development
+      AUTH_PROVIDER: dev
+      DATABASE_URL: sqlite:////data/drug_discovery.db
+      UPLOAD_DIR: /data/uploads
+      CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+      SILICONFLOW_API_KEY: ${SILICONFLOW_API_KEY:-}
+      INTAKE_MODEL_BASE: ${INTAKE_MODEL_BASE:-https://api.siliconflow.cn/v1}
+      INTAKE_TEXT_MODEL: ${INTAKE_TEXT_MODEL:-deepseek-ai/DeepSeek-V4-Flash}
+      INTAKE_VL_MODEL: ${INTAKE_VL_MODEL:-deepseek-ai/DeepSeek-OCR}
+      INTAKE_OCR_MODEL: ${INTAKE_OCR_MODEL:-deepseek-ai/DeepSeek-OCR}
+    volumes:
+      - ai4science-data:/data
+    ports:
+      - "8000:8000"
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1/drug-discovery
+        APP_BASE_PATH: ""
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  ai4science-data:
